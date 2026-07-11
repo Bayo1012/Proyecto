@@ -3,17 +3,13 @@
 ================================================== */
 
 .hero{
-
     position: relative;
-
     min-height: 100vh;
-
     display: flex;
-
     align-items: center;
-
     overflow: hidden;
-
+    padding-top:4rem;
+    padding-bottom:4rem;
 }
 
 /* ==================================================
@@ -21,19 +17,13 @@
 ================================================== */
 
 .hero__video{
-
     position: absolute;
-
     inset: 0;
-
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
-
-    z-index: var(--z-background);
-
+    z-index: -2;
+    transform: scale(1.03);
 }
 
 /* ==================================================
@@ -41,15 +31,16 @@
 ================================================== */
 
 .hero__overlay{
-
     position: absolute;
-
     inset: 0;
-
-    background: var(--hero-overlay);
-
-    z-index: 0;
-
+    background: 
+        linear-gradient(
+            90deg,
+            rgba(14, 20, 27, .88) 0%, 
+            rgba(14, 20, 27, .72) 45%,
+            rgba(14,20,27, .55) 100%
+        );
+    z-index: -1;
 }
 
 /* ==================================================
@@ -57,19 +48,12 @@
 ================================================== */
 
 .hero__container{
-
     position: relative;
-
-    z-index: var(--z-content);
-
+    z-index: 1;
     display: grid;
-
     grid-template-columns: 3fr 2fr;
-
     align-items: center;
-
-    gap: var(--space-3xl);
-
+    gap: 4rem;
 }
 
 /* ==================================================
@@ -77,35 +61,35 @@
 ================================================== */
 
 .hero__content{
-
     display: flex;
-
     flex-direction: column;
-
-    gap: var(--space-lg);
-
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 700px;
+    gap: 1.5rem;
 }
 
 .hero__title{
-
-    font-size: var(--fs-4xl);
-
-    line-height: 1.1;
+    max-width: 650px;
+    font-size: clamp(3.5rem,6vw,5rem);
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin:0;
 
 }
 
 .hero__subtitle{
-
-    font-size: var(--fs-xl);
-
+    font-size: 2.6rem;
     color: var(--color-secondary);
-
+    font-weight: 500;
 }
 
 .hero__description{
-
-    max-width: 650px;
-
+    max-width: 600px;
+    font-size: 1.08rem;
+    color:var(--color-text-muted);
+    line-height: 1.9;
 }
 
 .hero__button{
@@ -149,5 +133,25 @@
 .hero__scroll:hover{
 
     transform: translateX(-50%) translateY(5px);
+
+}
+
+.hero .chapter-label{
+
+    margin-bottom:.5rem;
+
+    padding:.45rem 1rem;
+
+    border:1px solid rgba(214,179,90,.35);
+
+    border-radius:var(--radius-full);
+
+    background:rgba(214,179,90,.08);
+
+}
+
+.countdown{
+
+    margin-top:2rem;
 
 }

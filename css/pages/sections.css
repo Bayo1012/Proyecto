@@ -1,0 +1,210 @@
+/* ==================================================
+   INTRODUCCIÓN
+================================================== */
+
+#introduccion{
+
+    background:var(--color-background);
+
+}
+
+#introduccion h2{
+
+    margin-top:1rem;
+
+    margin-bottom:1.5rem;
+
+    max-width:700px;
+
+}
+
+.intro__grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:2rem;
+
+    margin-top:3rem;
+
+}
+
+.intro__card{
+    background:var(--color-surface);
+    padding:2rem;
+    border-radius:var(--radius-lg);
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:var(--shadow-sm);
+    transition:var(--transition-normal);
+}
+
+.intro__card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-md);
+}
+
+.intro__card h3{
+    margin-bottom:1rem;
+    color:var(--color-secondary);
+}
+
+/* ==========================================
+   INTRO HEADER
+========================================== */
+
+#introduccion .chapter-label{
+
+    display:inline-block;
+
+    margin-bottom:1rem;
+
+}
+
+#introduccion h2{
+
+    max-width:700px;
+
+    margin:0 auto 1.5rem;
+
+    text-align:center;
+
+}
+
+#introduccion .lead{
+
+    max-width:850px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+#introduccion{
+
+    padding-top:var(--space-4xl);
+
+    padding-bottom:var(--space-4xl);
+
+}
+
+/* ==================================================
+   CAPÍTULOS
+================================================== */
+
+.chapter__video{
+
+    margin:3rem 0;
+
+}
+
+.chapter__video video{
+
+    width:100%;
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.chapter__content{
+
+    max-width:900px;
+
+}
+
+.chapter__content p{
+
+    margin-bottom:1.5rem;
+
+}
+
+/* ==================================================
+   CHAPTERS
+================================================== */
+
+.chapter{
+
+    padding: var(--space-4xl) 0;
+
+}
+
+.chapter__header{
+
+    text-align:center;
+
+    margin-bottom:3rem;
+
+}
+
+.chapter__header h2{
+
+    margin-top:1rem;
+
+    margin-bottom:1rem;
+
+}
+
+.chapter__header .lead{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.chapter__video{
+
+    margin:3rem auto;
+
+    max-width:1000px;
+
+}
+
+.chapter__video video{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.chapter__content{
+    max-width:900px;
+    margin:auto;
+}
+
+.chapter__content p{
+    text-align:justify;
+    margin-bottom:2rem;
+}
+
+.chapter__image{
+    margin:3rem auto;
+    text-align:center;
+}
+
+.chapter__image img{
+    width:100%;
+    max-width:850px;
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-md);
+}
+
+.chapter__image figcaption{
+
+    margin-top:1rem;
+
+    font-size:var(--fs-sm);
+
+    color:var(--color-text-muted);
+
+    font-style:italic;
+
+}

@@ -1,0 +1,53 @@
+/* ==================================================
+   CARDS
+================================================== */
+
+/* ==========================
+   HERO CARD
+========================== */
+
+.hero__card{
+    width:100%;
+    max-width:400px;
+    background:rgba(23,33,43,.82);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:var(--shadow-lg);
+    transition:var(--transition-normal);
+}
+
+.hero__card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ==========================
+   IMAGE
+========================== */
+
+.hero__card-image{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.hero__card-content{
+    padding:1.5rem;
+}
+
+.hero__card-content h2{
+    margin-bottom:var(--space-sm);
+    margin:.5rem 0 1rem;
+}
+
+.hero__card-content p{
+    color:var(--color-text-muted);
+    line-height:1.7;
+}

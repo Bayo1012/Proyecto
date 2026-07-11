@@ -145,30 +145,23 @@
                 </li>
 
                 <li class="sidebar__item">
+                    <a href="#capitulo3" class="sidebar__link">
+                        <i class="bi bi-3-circle sidebar__icon"></i>
+                        <span class="sidebar__text">Capítulo III</span>
+                    </a>
+                </li>
+
+                <li class="sidebar__item">
+                    <a href="#capitulo4" class="sidebar__link">
+                        <i class="bi bi-4-circle sidebar__icon"></i>
+                        <span class="sidebar__text">Capítulo IV</span>
+                    </a>
+                </li>
+
+                <li class="sidebar__item">
                     <a href="#repositorio" class="sidebar__link">
                         <i class="bi bi-folder sidebar__icon"></i>
                         <span class="sidebar__text">Repositorio</span>
-                    </a>
-                </li>
-
-                <li class="sidebar__item">
-                    <a href="#herramientas" class="sidebar__link">
-                        <i class="bi bi-tools sidebar__icon"></i>
-                        <span class="sidebar__text">Herramientas</span>
-                    </a>
-                </li>
-
-                <li class="sidebar__item">
-                    <a href="#infografias" class="sidebar__link">
-                        <i class="bi bi-easel sidebar__icon"></i>
-                        <span class="sidebar__text">Infografías</span>
-                    </a>
-                </li>
-
-                <li class="sidebar__item">
-                    <a href="#equipo" class="sidebar__link">
-                        <i class="bi bi-people sidebar__icon"></i>
-                        <span class="sidebar__text">Equipo</span>
                     </a>
                 </li>
 
@@ -192,9 +185,18 @@
 
             <!-- Video de fondo -->
 
-            <video class="hero__video" autoplay muted loop playsinline>
+            <video 
+                class="hero__video" 
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                preload="metadata"
+                poster="assets/images/hero/hero-poster.jpg">
 
-                <source src="assets/videos/hero/video-hero.mp4" type="video/mp4">
+                <source 
+                src="assets/videos/hero/video-hero.mp4" 
+                type="video/mp4">
 
                 Tu navegador no soporta videos HTML5.
 
@@ -238,6 +240,7 @@
                     <a href="#introduccion" class="btn hero__button">
 
                         Explorar contenido
+                        <i class="bi bi-arrow-right"></i>
 
                     </a>
 
@@ -246,35 +249,23 @@
                     <div class="countdown">
 
                         <div class="countdown__item">
-
                             <span id="days">00</span>
-
                             <small>Días</small>
-
                         </div>
 
                         <div class="countdown__item">
-
                             <span id="hours">00</span>
-
                             <small>Horas</small>
-
                         </div>
 
                         <div class="countdown__item">
-
                             <span id="minutes">00</span>
-
                             <small>Min</small>
-
                         </div>
 
                         <div class="countdown__item">
-
                             <span id="seconds">00</span>
-
                             <small>Seg</small>
-
                         </div>
 
                     </div>
@@ -295,17 +286,13 @@
 
                     <div class="hero__card-content">
 
-                        <h2>
+                        <span class="chapter-label">
+                            Cineasta Peruano
+                        </span>
 
-                            Armando Robles Godoy
+                        <h2>Armando Robles Godoy</h2>
 
-                        </h2>
-
-                        <p>
-
-                            Aquí irá la información proporcionada por la institución.
-
-                        </p>
+                        <p>Aquí irá la información proporcionada por el grupo.</p>
 
                     </div>
 
@@ -323,42 +310,174 @@
 
         </section>
 
-        <!-- Introducción -->
+        <!-- =========================================
+            INTRODUCTION
+        ========================================== -->
         <section id="introduccion" class="section">
+
+            <div class="container">
+                <header class="chapter__header">
+                    <span class="chapter-label">
+                        Introducción
+                    </span>
+
+                    <h2>
+                        Introducción a la alfabetización audiovisual
+                    </h2>
+
+                    <p class="lead">
+
+                        Este capítulo presenta los conceptos fundamentales de la
+                        alfabetización audiovisual y su importancia en la educación.
+
+                    </p>
+                </header>
+
+            <div class="chapter__video">
+
+                <video controls preload="metadata">
+
+                    <source
+                        src="assets/videos/capitulo1.mp4"
+                        type="video/mp4">
+
+                    Tu navegador no soporta videos.
+
+                </video>
+
+            </div>
+
+            <div class="chapter__content">
+
+                <p>
+
+                    Aquí irá el contenido correspondiente al primer capítulo.
+                    Este texto será reemplazado por la información definitiva
+                    proporcionada por la institución.
+
+                </p>
+
+                <figure class="chapter__image">
+
+                    <img
+                        src="assets/images/chapters/capitulo1.jpg"
+                        alt="Imagen del capítulo">
+
+                    <figcaption>
+
+                        Imagen de apoyo del capítulo.
+
+                    </figcaption>
+
+                </figure>
+
+                <p>
+
+                    Este espacio permitirá complementar el video con
+                    explicaciones e imágenes que faciliten la comprensión
+                    del contenido.
+
+                </p>
+
+            </div>
+
+            
+
+            </div>
         </section>
 
-        <!-- Capítulo I -->
-        <section id="capitulo1" class="section">
+        <!-- =========================================
+            CAPÍTULO I
+        ========================================= -->
+
+        <section id="capitulo1" class="chapter">
+
+            <div class="container">
+
+                <header class="chapter__header">
+
+                    <span class="chapter-label">
+                        Capítulo I
+                    </span>
+
+                    <h2>
+                        Titulo del capitulo
+                    </h2>
+
+                    <p class="lead">
+
+                        En este capítulo se presentan los conceptos básicos
+                        de la alfabetización audiovisual y su importancia
+                        dentro del ámbito educativo.
+
+                    </p>
+
+                </header>
+
+                <!-- Video -->
+                <div class="chapter__video">
+
+                    <video controls preload="metadata">
+
+                        <source
+                            src="assets/videos/capitulo1.mp4"
+                            type="video/mp4">
+
+                        Tu navegador no soporta videos.
+
+                    </video>
+
+                </div>
+
+                <!-- Texto -->
+
+                <div class="chapter__content">
+
+                    <p>
+                        Aquí irá el contenido del capítulo del docuweb.
+                    </p>
+
+                </div>
+
+            </div>
+
         </section>
 
         <!-- Capítulo II -->
         <section id="capitulo2" class="section">
         </section>
 
+        <!-- Capítulo III -->
+        <section id="capitulo3" class="section">
+        </section>
+
+        <!-- Capítulo IV -->
+        <section id="capitulo4" class="section">
+        </section>
+
         <!-- Repositorio -->
         <section id="repositorio" class="section">
         </section>
 
+        <!-- =========================================
+            FOOTER
+        ========================================== -->
+        <footer>
+        </footer>
+
         <!-- Herramientas -->
-        <section id="herramientas" class="section">
-        </section>
+<!--       <section id="herramientas" class="section"> --> 
+<!--        </section>--> 
 
         <!-- Infografías -->
-        <section id="infografias" class="section">
-        </section>
+<!--        <section id="infografias" class="section">--> 
+<!--        </section>--> 
 
         <!-- Galería -->
-        <section id="galeria" class="section">
-        </section>
+<!--        <section id="galeria" class="section">--> 
+<!--        </section>--> 
 
     </main>
-
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
-
-    <footer>
-    </footer>
 
     <!-- =========================================
          JAVASCRIPT

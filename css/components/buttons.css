@@ -1,0 +1,69 @@
+/* ==================================================
+   BUTTONS
+================================================== */
+
+/* ==========================
+   BOTÓN BASE
+========================== */
+
+.btn{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: .6rem;
+
+    padding: .9rem 1.8rem;
+
+    border-radius: var(--radius-full);
+
+    font-family: var(--font-heading);
+
+    font-weight: 600;
+
+    font-size: var(--fs-md);
+
+    cursor: pointer;
+
+    transition: var(--transition-normal);
+
+}
+
+/* ==========================
+   BOTÓN PRINCIPAL
+========================== */
+
+.btn{
+
+    background: var(--color-primary);
+
+    color: #fff;
+
+    box-shadow: var(--shadow-md);
+
+}
+
+/* ==========================
+   HOVER
+========================== */
+
+.btn:hover{
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-lg);
+
+}
+
+/* ==========================
+   ACTIVE
+========================== */
+
+.btn:active{
+
+    transform: scale(.97);
+
+}
