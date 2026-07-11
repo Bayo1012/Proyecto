@@ -1,0 +1,154 @@
+/* ==================================================
+   TYPOGRAPHY
+   ================================================== */
+
+/* ==========================
+   HEADINGS
+========================== */
+
+    h1 {
+        font-size: var(--fs-4xl);
+    }   
+    h2 {
+        font-size: var(--fs-3xl);
+    }
+    h3 {
+        font-size: var(--fs-2xl);
+    }
+    h4 {
+        font-size: var(--fs-xl);
+    }
+    h5 {
+        font-size: var(--fs-lg);
+    }
+    h6{
+
+        font-size: var(--fs-md);
+        
+        font-family:var(--font-heading);
+
+        font-weight:700;
+
+        line-height:1.2;
+
+        letter-spacing:-0.02em;
+
+        color:var(--color-text);
+
+    }
+
+/* ==========================
+   PARAGRAPHS
+========================== */
+
+    p{
+
+        font-family:var(--font-body);
+
+        font-size:var(--fs-md);
+
+        line-height:1.8;
+
+        color:var(--color-text-muted);
+
+    }
+
+/* ==========================
+   LINKS
+========================== */
+
+    a{
+
+        transition:var(--transition-fast);
+
+    }
+
+/* ==========================
+   LISTS
+========================== */
+
+    li{
+
+        font-size:var(--fs-md);
+
+    }
+
+/* ==========================
+   BLOCKQUOTE
+========================== */
+
+    blockquote{
+
+        font-family:var(--font-accent);
+
+        font-size:var(--fs-xl);
+
+        font-style:italic;
+
+        line-height:1.6;
+
+        border-left:4px solid var(--color-secondary);
+
+        padding-left:var(--space-lg);
+
+        color:var(--color-text);
+
+    }
+
+/* ==========================
+   SMALL TEXT
+========================== */
+
+    small{
+
+        font-size:var(--fs-sm);
+
+        color:var(--color-text-muted);
+
+    }
+
+/* ==========================
+   STRONG
+========================== */
+
+    strong{
+
+        font-weight:700;
+
+        color:var(--color-text);
+
+    }
+
+/* ==========================
+   special text
+========================== */
+
+    .chapter-label{
+
+        display:inline-block;
+
+        font-family:var(--font-heading);
+
+        font-size:var(--fs-sm);
+
+        font-weight:600;
+
+        text-transform:uppercase;
+
+        letter-spacing:.25em;
+
+        color:var(--color-secondary);
+
+    }
+
+    .lead{
+
+        font-size:var(--fs-lg);
+
+        line-height:1.8;
+
+        max-width:800px;
+
+        color:var(--color-text);
+
+    }

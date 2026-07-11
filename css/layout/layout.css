@@ -1,0 +1,40 @@
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+
+    background: var(--color-background);
+
+    color: var(--color-text);
+
+    font-family: var(--font-body);
+
+    overflow-x: hidden;
+
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+main{
+    margin-left: var(--sidebar-collapsed);
+    min-height:100vh;
+    transition:margin-left var(--transition-normal);
+}
+
+.sidebar:hover + main{
+    margin-left: var(--sidebar-width);
+}
+
+.container{
+    width:min(1200px,90%);
+    margin-inline:auto;
+}
+
+.section{
+    padding:
+        var(--space-3xl)
+        0;
+}

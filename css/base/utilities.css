@@ -1,0 +1,259 @@
+/* ==================================================
+   UTILITIES
+   ================================================== */
+
+/* ==========================
+   CONTAINERS
+========================== */
+
+.container{
+    width:min(100% - 2rem,var(--container-width));
+    margin-inline:auto;
+}
+
+.container-small{
+    width:min(100% - 2rem,var(--container-small));
+    margin-inline:auto;
+}
+
+/* ==========================
+   DISPLAY
+========================== */
+
+.d-block{
+    display:block;
+}
+
+.d-inline{
+    display:inline;
+}
+
+.d-inline-block{
+    display:inline-block;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.d-grid{
+    display:grid;
+}
+
+.d-none{
+    display:none;
+}
+
+/* ==========================
+   FLEXBOX
+========================== */
+
+.d-flex{
+    display:flex;
+}
+
+.flex-column{
+    flex-direction:column;
+}
+
+.flex-wrap{
+    flex-wrap:wrap;
+}
+
+.justify-start{
+    justify-content:flex-start;
+}
+
+.justify-center{
+    justify-content:center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+.justify-around{
+    justify-content:space-around;
+}
+
+.align-start{
+    align-items:flex-start;
+}
+
+.align-center{
+    align-items:center;
+}
+
+.align-end{
+    align-items:flex-end;
+}
+
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.grid-2{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:var(--space-lg);
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:var(--space-lg);
+}
+
+.grid-4{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:var(--space-lg);
+}
+
+/* ==========================
+   TEXT
+========================== */
+
+.text-left{
+    text-align:left;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.text-right{
+    text-align:right;
+}
+
+.text-justify{
+    text-align:justify;
+}
+
+.text-brand{
+    color:var(--color-primary);
+}
+
+.text-highlight{
+    color:var(--color-secondary);
+}
+
+.text-secondary{
+    color:var(--color-text-muted);
+}
+
+/* ==========================
+   SPACING
+========================== */
+
+.mt-xs { margin-top: var(--space-xs); }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+
+.mb-xs { margin-bottom: var(--space-xs); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+
+.p-xs { padding: var(--space-xs); }
+.p-sm { padding: var(--space-sm); }
+.p-md { padding: var(--space-md); }
+.p-lg { padding: var(--space-lg); }
+.p-xl { padding: var(--space-xl); }
+
+/* ==========================
+   SECTIONS
+========================== */
+
+.section{
+    padding:var(--section-padding) 0;
+}
+
+/* ==========================
+   BORDER RADIUS
+========================== */
+
+.rounded-sm{
+    border-radius:var(--radius-sm);
+}
+
+.rounded-md{
+    border-radius:var(--radius-md);
+}
+
+.rounded-lg{
+    border-radius:var(--radius-lg);
+}
+
+.rounded-full{
+    border-radius:var(--radius-full);
+}
+
+/* ==========================
+   SHADOWS
+========================== */
+
+.shadow-sm{
+    box-shadow:var(--shadow-sm);
+}
+
+.shadow-md{
+    box-shadow:var(--shadow-md);
+}
+
+.shadow-lg{
+    box-shadow:var(--shadow-lg);
+}
+
+/* ==========================
+   TRANSITIONS
+========================== */
+
+.transition{
+    transition:var(--transition-normal);
+}
+
+/* ==========================
+   OBJECT FIT
+========================== */
+
+.object-cover{
+    object-fit:cover;
+}
+
+.object-contain{
+    object-fit:contain;
+}
+
+/* ==========================
+   SIZING
+========================== */
+
+.w-100{
+    width:100%;
+}
+
+.h-100{
+    height:100%;
+}
+
+/* ==========================
+   VISIBILITY
+========================== */
+
+.hidden{
+    display:none;
+}
+
+.overflow-hidden{
+    overflow:hidden;
+}

@@ -1,0 +1,120 @@
+/* ========================
+    Aula Visual - Diseño
+   ======================== */
+
+:root{
+
+    /* project */
+
+    --hero-overlay: rgba(14,20,27,.65);
+
+    --section-padding: 7rem;
+
+    --card-gap: 2rem;
+
+    --video-radius: 18px;
+
+    --scroll-offset: 90px;  
+
+    /* colors */
+
+    --color-background: #0E141B;
+    --color-surface: #17212B;
+    --color-card: #22303D;
+
+    --color-primary: #2F80ED;
+    --color-secondary: #D6B35A;
+
+    --color-text: #F9FAFB;
+    --color-text-muted: #B8C0CC;
+
+    --color-success: #2ECC71;
+    --color-warning: #F2C94C;
+    --color-danger: #EB5757;
+
+    /* typography */
+
+    --font-heading: "Poppins", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-accent: "Cormorant Garamond", serif;
+
+    --fs-xs: .75rem;
+    --fs-sm: .875rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.75rem;
+    --fs-2xl: 2.5rem;
+    --fs-3xl: 3.5rem;
+    --fs-4xl: 5rem;
+
+    /* spacing */
+
+    --space-xs: .5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+    --space-3xl: 6rem;
+    --space-4xl: 8rem;
+
+    /* border radius */
+
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 999px;    
+
+    /* shadows */
+
+    --shadow-sm: 0 2px 8px rgba(0,0,0,.15);
+
+    --shadow-md: 0 8px 20px rgba(0,0,0,.20);
+
+    --shadow-lg: 0 15px 35px rgba(0,0,0,.30);
+
+    /* transitions */
+
+    --transition-fast: .2s ease;
+
+    --transition-normal: .35s ease;
+
+    --transition-slow: .6s ease;    
+
+    /* layout */
+
+    --container-width: 1300px;
+
+    --container-small: 900px;
+
+    --header-height: 80px;
+
+    /* sidebar */
+
+    --sidebar-width: 260px;
+
+    --sidebar-collapsed: 70px;
+
+    /* z-index */
+
+    --z-background: -1;
+
+    --z-content: 1;
+
+    --z-sidebar: 100;
+
+    --z-overlay: 200;
+
+    --z-loader: 9999;
+
+    /* breakpoints */
+
+    --bp-mobile: 576px;
+
+    --bp-tablet: 768px;
+
+    --bp-laptop: 992px;
+
+    --bp-desktop: 1200px;
+
+}

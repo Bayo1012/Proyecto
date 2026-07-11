@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- =========================================
+         METADATOS
+    ========================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aula Visual</title>
+
+    <meta name="description" content="Docuweb sobre Alfabetización Audiovisual.">
+
+    <!-- =========================================
+         FAVICON
+    ========================================== -->
+
+    <link rel="icon" type="image/png" href="assets/images/logos/logo.png">
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- =========================================
+        BOOTSTRAP ICONS
+    ========================================== -->
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- =========================================
+         CSS BASE
+    ========================================== -->
+
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/typography.css">
+    <link rel="stylesheet" href="css/base/utilities.css">
+
+    <!-- =========================================
+         LAYOUT
+    ========================================== -->
+
+    <link rel="stylesheet" href="css/layout/layout.css">
+
+    <!-- =========================================
+         COMPONENTES
+    ========================================== -->
+
+    <link rel="stylesheet" href="css/components/sidebar.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/components/countdown.css">
+    <link rel="stylesheet" href="css/components/gallery.css">
+    <link rel="stylesheet" href="css/components/loader.css">
+
+    <!-- =========================================
+         PÁGINAS
+    ========================================== -->
+
+    <link rel="stylesheet" href="css/pages/pages.css">
+    <link rel="stylesheet" href="css/pages/sections.css">
+
+    <!-- =========================================
+         ANIMACIONES
+    ========================================== -->
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- =========================================
+         RESPONSIVE
+    ========================================== -->
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar__header">
+
+            <div class="sidebar__logo">
+
+                <img src="assets/images/logos/logo.png"
+                    alt="Logo Aula Visual">
+
+            </div>
+
+        </div>
+
+        <nav class="sidebar__nav">
+
+            <ul class="sidebar__menu">
+
+                <li class="sidebar__item">
+                    <a href="#hero" class="sidebar__link active">
+                        <span class="sidebar__icon">
+                            <i class="bi bi-house-door-fill"></i>
+                        </span>
+                        <span class="sidebar__text">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="sidebar__item">
+                    <a href="#chapter1" class="sidebar__link">
+                        <span class="sidebar__icon">
+                            <i class="bi bi-film"></i>
+                        </span>
+                        <span class="sidebar__text">Capítulo I</span>
+                    </a>
+                </li>
+
+                <li class="sidebar__item">
+                    <a href="#chapter2" class="sidebar__link">
+                        <span class="sidebar__icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                        </span>
+                        <span class="sidebar__text">Capítulo II</span>
+                    </a>
+                </li>
+
+                <li class="sidebar__item">
+                    <a href="#repository" class="sidebar__link">
+                        <span class="sidebar__icon">
+                            <i class="bi bi-collection-play-fill"></i>
+                        </span>
+                        <span class="sidebar__text">Repositorio</span>
+                    </a>
+                </li>
+
+                <li class="sidebar__item">
+                    <a href="#toolbox" class="sidebar__link">
+                        <span class="sidebar__icon">
+                            <i class="bi bi-tools"></i>
+                        </span>
+                        <span class="sidebar__text">Herramientas</span>
+                    </a>
+                </li>
+
+                <li class="sidebar__item">
+                    <a href="#gallery" class="sidebar__link">
+                        <span class="sidebar__icon">
+                            <i class="bi bi-images"></i>
+                        </span>
+                        <span class="sidebar__text">Galería</span>
+                    </a>
+                </li>
+
+                <li class="sidebar__item">
+                    <a href="#team" class="sidebar__link">
+                        <span class="sidebar__icon">
+                            <i class="bi bi-people-fill"></i>
+                        </span>
+                        <span class="sidebar__text">Equipo</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <nav class="sidebar__footer">   
+
+        </nav>
+
+    </aside>
+
+    <!-- =========================================
+         CONTENIDO PRINCIPAL
+    ========================================== -->
+
+    <main>
+
+        <section id="hero" class="section hero"></section>
+
+        <section id="chapter1" class="section chapter"></section>
+
+        <section id="chapter2" class="section chapter"></section>
+
+        <section id="repository" class="section repository"></section>
+
+        <section id="toolbox" class="section toolbox"></section>
+
+        <section id="gallery" class="section gallery"></section>
+
+        <section id="team" class="section team"></section>
+
+        <footer id="footer"></footer>
+
+    </main>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="js/config.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/utils.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/gallery.js"></script>
+
+</body>
+
+</html>
