@@ -40,22 +40,23 @@
          CSS BASE
     ========================================== -->
 
-    <link rel="stylesheet" href="css/base/variables.css">
     <link rel="stylesheet" href="css/base/reset.css">
     <link rel="stylesheet" href="css/base/typography.css">
     <link rel="stylesheet" href="css/base/utilities.css">
+    <link rel="stylesheet" href="css/base/variables.css">
 
     <!-- =========================================
          LAYOUT
     ========================================== -->
 
+    <link rel="stylesheet" href="css/layout/footer.css">    
     <link rel="stylesheet" href="css/layout/layout.css">
+    <link rel="stylesheet" href="css/layout/sidebar.css">
 
     <!-- =========================================
          COMPONENTES
     ========================================== -->
 
-    <link rel="stylesheet" href="css/components/sidebar.css">
     <link rel="stylesheet" href="css/components/buttons.css">
     <link rel="stylesheet" href="css/components/cards.css">
     <link rel="stylesheet" href="css/components/countdown.css">
@@ -66,8 +67,14 @@
          PÁGINAS
     ========================================== -->
 
-    <link rel="stylesheet" href="css/pages/pages.css">
-    <link rel="stylesheet" href="css/pages/sections.css">
+    <link rel="stylesheet" href="css/pages/chapter1.css">
+    <link rel="stylesheet" href="css/pages/chapter2.css">
+    <link rel="stylesheet" href="css/pages/gallery-page.css">
+    <link rel="stylesheet" href="css/pages/hero.css">
+    <link rel="stylesheet" href="css/pages/infographics.css">
+    <link rel="stylesheet" href="css/pages/repository.css">
+    <link rel="stylesheet" href="css/pages/team.css">
+    <link rel="stylesheet" href="css/pages/toolbox.css">
 
     <!-- =========================================
          ANIMACIONES
@@ -91,89 +98,81 @@
 
     <aside class="sidebar">
 
+        <!-- Logo -->
+
         <div class="sidebar__header">
 
-            <div class="sidebar__logo">
+            <a href="#inicio" class="sidebar__logo">
 
-                <img src="assets/images/logos/logo.png"
-                    alt="Logo Aula Visual">
+                <img src="assets/images/logos/logo.png" alt="Logo Aula Visual">
 
-            </div>
+            </a>
 
         </div>
+
+        <!-- Navegación -->
 
         <nav class="sidebar__nav">
 
             <ul class="sidebar__menu">
 
                 <li class="sidebar__item">
-                    <a href="#hero" class="sidebar__link active">
-                        <span class="sidebar__icon">
-                            <i class="bi bi-house-door-fill"></i>
-                        </span>
+                    <a href="#inicio" class="sidebar__link active">
+                        <i class="bi bi-house-door sidebar__icon"></i>
                         <span class="sidebar__text">Inicio</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#chapter1" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="bi bi-film"></i>
-                        </span>
+                    <a href="#introduccion" class="sidebar__link">
+                        <i class="bi bi-book sidebar__icon"></i>
+                        <span class="sidebar__text">Introducción</span>
+                    </a>
+                </li>
+
+                <li class="sidebar__item">
+                    <a href="#capitulo1" class="sidebar__link">
+                        <i class="bi bi-1-circle sidebar__icon"></i>
                         <span class="sidebar__text">Capítulo I</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#chapter2" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="bi bi-camera-reels-fill"></i>
-                        </span>
+                    <a href="#capitulo2" class="sidebar__link">
+                        <i class="bi bi-2-circle sidebar__icon"></i>
                         <span class="sidebar__text">Capítulo II</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#repository" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="bi bi-collection-play-fill"></i>
-                        </span>
+                    <a href="#repositorio" class="sidebar__link">
+                        <i class="bi bi-folder sidebar__icon"></i>
                         <span class="sidebar__text">Repositorio</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#toolbox" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="bi bi-tools"></i>
-                        </span>
+                    <a href="#herramientas" class="sidebar__link">
+                        <i class="bi bi-tools sidebar__icon"></i>
                         <span class="sidebar__text">Herramientas</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#gallery" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="bi bi-images"></i>
-                        </span>
-                        <span class="sidebar__text">Galería</span>
+                    <a href="#infografias" class="sidebar__link">
+                        <i class="bi bi-easel sidebar__icon"></i>
+                        <span class="sidebar__text">Infografías</span>
                     </a>
                 </li>
 
                 <li class="sidebar__item">
-                    <a href="#team" class="sidebar__link">
-                        <span class="sidebar__icon">
-                            <i class="bi bi-people-fill"></i>
-                        </span>
+                    <a href="#equipo" class="sidebar__link">
+                        <i class="bi bi-people sidebar__icon"></i>
                         <span class="sidebar__text">Equipo</span>
                     </a>
                 </li>
 
             </ul>
-
-        </nav>
-
-        <nav class="sidebar__footer">   
 
         </nav>
 
@@ -185,39 +184,192 @@
 
     <main>
 
-        <section id="hero" class="section hero"></section>
+        <!-- =========================================
+            HERO
+        ========================================= -->
 
-        <section id="chapter1" class="section chapter"></section>
+        <section id="inicio" class="hero">
 
-        <section id="chapter2" class="section chapter"></section>
+            <!-- Video de fondo -->
 
-        <section id="repository" class="section repository"></section>
+            <video class="hero__video" autoplay muted loop playsinline>
 
-        <section id="toolbox" class="section toolbox"></section>
+                <source src="assets/videos/hero/video-hero.mp4" type="video/mp4">
 
-        <section id="gallery" class="section gallery"></section>
+                Tu navegador no soporta videos HTML5.
 
-        <section id="team" class="section team"></section>
+            </video>
 
-        <footer id="footer"></footer>
+            <!-- Capa oscura -->
+
+            <div class="hero__overlay"></div>
+
+            <!-- Contenido -->
+
+            <div class="container hero__container">
+
+                <!-- =========================================
+                    COLUMNA IZQUIERDA
+                ========================================== -->
+
+                <div class="hero__content">
+
+                    <span class="chapter-label">
+                        Docuweb Educativo
+                    </span>
+
+                    <h1 class="hero__title">
+                        Aula Visual
+                    </h1>
+
+                    <p class="hero__subtitle">
+                        Alfabetización Audiovisual
+                    </p>
+
+                    <p class="hero__description">
+
+                        Descubre la importancia del lenguaje audiovisual,
+                        conoce el legado de Armando Robles Godoy
+                        y explora recursos educativos mediante
+                        una experiencia interactiva.
+
+                    </p>
+
+                    <a href="#introduccion" class="btn hero__button">
+
+                        Explorar contenido
+
+                    </a>
+
+                    <!-- Cuenta regresiva -->
+
+                    <div class="countdown">
+
+                        <div class="countdown__item">
+
+                            <span id="days">00</span>
+
+                            <small>Días</small>
+
+                        </div>
+
+                        <div class="countdown__item">
+
+                            <span id="hours">00</span>
+
+                            <small>Horas</small>
+
+                        </div>
+
+                        <div class="countdown__item">
+
+                            <span id="minutes">00</span>
+
+                            <small>Min</small>
+
+                        </div>
+
+                        <div class="countdown__item">
+
+                            <span id="seconds">00</span>
+
+                            <small>Seg</small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- =========================================
+                    COLUMNA DERECHA
+                ========================================== -->
+
+                <aside class="hero__card">
+
+                    <img
+                        src="assets/images/hero/robles-godoy.jpg"
+                        alt="Armando Robles Godoy"
+                        class="hero__card-image"
+                    >
+
+                    <div class="hero__card-content">
+
+                        <h2>
+
+                            Armando Robles Godoy
+
+                        </h2>
+
+                        <p>
+
+                            Aquí irá la información proporcionada por la institución.
+
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+            <!-- Scroll -->
+
+            <a href="#introduccion" class="hero__scroll">
+
+                <i class="bi bi-chevron-double-down"></i>
+
+            </a>
+
+        </section>
+
+        <!-- Introducción -->
+        <section id="introduccion" class="section">
+        </section>
+
+        <!-- Capítulo I -->
+        <section id="capitulo1" class="section">
+        </section>
+
+        <!-- Capítulo II -->
+        <section id="capitulo2" class="section">
+        </section>
+
+        <!-- Repositorio -->
+        <section id="repositorio" class="section">
+        </section>
+
+        <!-- Herramientas -->
+        <section id="herramientas" class="section">
+        </section>
+
+        <!-- Infografías -->
+        <section id="infografias" class="section">
+        </section>
+
+        <!-- Galería -->
+        <section id="galeria" class="section">
+        </section>
 
     </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+    </footer>
 
     <!-- =========================================
          JAVASCRIPT
     ========================================== -->
 
-    <script src="js/config.js"></script>
-    <script src="js/constants.js"></script>
-    <script src="js/utils.js"></script>
-
-    <script src="js/main.js"></script>
-
     <script src="js/sidebar.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/animations.js"></script>
+    <script src="js/config.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

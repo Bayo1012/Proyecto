@@ -1,0 +1,153 @@
+/* ==================================================
+   HERO
+================================================== */
+
+.hero{
+
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+/* ==================================================
+   VIDEO
+================================================== */
+
+.hero__video{
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: var(--z-background);
+
+}
+
+/* ==================================================
+   OVERLAY
+================================================== */
+
+.hero__overlay{
+
+    position: absolute;
+
+    inset: 0;
+
+    background: var(--hero-overlay);
+
+    z-index: 0;
+
+}
+
+/* ==================================================
+   CONTAINER
+================================================== */
+
+.hero__container{
+
+    position: relative;
+
+    z-index: var(--z-content);
+
+    display: grid;
+
+    grid-template-columns: 3fr 2fr;
+
+    align-items: center;
+
+    gap: var(--space-3xl);
+
+}
+
+/* ==================================================
+   CONTENT
+================================================== */
+
+.hero__content{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-lg);
+
+}
+
+.hero__title{
+
+    font-size: var(--fs-4xl);
+
+    line-height: 1.1;
+
+}
+
+.hero__subtitle{
+
+    font-size: var(--fs-xl);
+
+    color: var(--color-secondary);
+
+}
+
+.hero__description{
+
+    max-width: 650px;
+
+}
+
+.hero__button{
+
+    width: fit-content;
+
+}
+
+/* ==================================================
+   CARD
+================================================== */
+
+.hero__card{
+
+    justify-self: center;
+
+}
+
+/* ==================================================
+   SCROLL
+================================================== */
+
+.hero__scroll{
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 30px;
+
+    transform: translateX(-50%);
+
+    font-size: 2rem;
+
+    color: var(--color-text);
+
+    transition: var(--transition-normal);
+
+}
+
+.hero__scroll:hover{
+
+    transform: translateX(-50%) translateY(5px);
+
+}
