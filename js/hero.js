@@ -1,8 +1,21 @@
-/* ==================================================
-   HERO
-================================================== */
+/* ==========================================
+   HERO BUTTON
+========================================== */
 
-/*
-    Este archivo almacenará las futuras
-    interacciones del Hero.
-*/
+const heroButton=document.querySelector(".hero__button");
+
+if(heroButton){
+
+    heroButton.addEventListener("click",()=>{
+
+        document
+        .querySelector("#introduccion")
+        .scrollIntoView({
+
+            behavior:"smooth"
+
+        });
+
+    });
+
+}

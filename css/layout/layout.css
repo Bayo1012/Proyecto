@@ -28,11 +28,6 @@ main{
     margin-left: var(--sidebar-width);
 }
 
-.container{
-    width:min(1200px,90%);
-    margin-inline:auto;
-}
-
 .section{
     padding:
         var(--space-3xl)
