@@ -34,8 +34,7 @@ function updateActiveSection() {
     sections.forEach(section => {
 
         const sectionTop = section.offsetTop;
-        const sectionBottom =
-            sectionTop + section.offsetHeight;
+        const sectionBottom = sectionTop + section.offsetHeight;
 
         if (
             scrollPosition >= sectionTop &&
@@ -45,6 +44,10 @@ function updateActiveSection() {
         }
 
     });
+
+    if (currentSectionId === "introduccion") {
+        currentSectionId = "inicio";
+    }
 
     if (!currentSectionId) {
         return;

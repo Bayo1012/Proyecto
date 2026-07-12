@@ -67,3 +67,15 @@
     transform: scale(.97);
 
 }
+
+.btn-secondary {
+    background: transparent;
+    color: var(--color-text);
+
+    border: 1px solid rgba(255,255,255,.18);
+    box-shadow: none;
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,.08);
+}

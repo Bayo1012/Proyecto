@@ -4,7 +4,20 @@
 
 body{
 
-    background: var(--color-background);
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(38,90,160,.25),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at bottom left,
+            rgba(18,40,90,.20),
+            transparent 40%
+        ),
+
+        var(--color-background);
 
     color: var(--color-text);
 

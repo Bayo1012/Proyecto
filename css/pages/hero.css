@@ -3,6 +3,16 @@
 ================================================== */
 
 .hero{
+    background:
+        linear-gradient(
+            rgba(0,0,0,.65),
+            rgba(0,0,0,.75)
+        ),
+        radial-gradient(
+            circle at right,
+            rgba(52,110,190,.20),
+            transparent 45%
+        );
     position: relative;
     min-height: 100vh;
     display: flex;

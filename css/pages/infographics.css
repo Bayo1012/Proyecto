@@ -1,0 +1,117 @@
+/* ==================================================
+   INFOGRAFÍAS
+================================================== */
+
+.infographics {
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(47, 128, 237, .12),
+            transparent 32%
+        ),
+        var(--color-surface);
+}
+
+.infographics__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4xl);
+
+    max-width: 1050px;
+    margin-inline: auto;
+}
+
+.infographic-resource {
+    padding: var(--space-xl);
+
+    background: rgba(23, 33, 43, .82);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.infographic-resource__header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+
+    margin-bottom: var(--space-xl);
+}
+
+.infographic-resource__number {
+    flex-shrink: 0;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: var(--radius-md);
+
+    background: var(--color-primary);
+    color: #fff;
+
+    font-family: var(--font-heading);
+    font-size: var(--fs-lg);
+    font-weight: 800;
+}
+
+.infographic-resource__header h3 {
+    margin-bottom: var(--space-sm);
+
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.infographic-resource__image {
+    display: block;
+    overflow: hidden;
+
+    border-radius: var(--radius-lg);
+    background: #fff;
+
+    transition: var(--transition-normal);
+}
+
+.infographic-resource__image:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.infographic-resource__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.infographic-resource__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+
+    margin-top: var(--space-lg);
+}
+
+.infographics__notice {
+    max-width: 850px;
+    margin: var(--space-3xl) auto 0;
+    padding: var(--space-lg);
+
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+
+    background: rgba(47,128,237,.08);
+    border: 1px dashed rgba(47,128,237,.4);
+    border-radius: var(--radius-lg);
+}
+
+.infographics__notice i {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.infographics__notice h3 {
+    margin-bottom: var(--space-xs);
+}

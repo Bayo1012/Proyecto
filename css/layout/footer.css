@@ -133,3 +133,45 @@
     color: var(--color-secondary);
     box-shadow: var(--shadow-sm);
 }
+
+/* ==========================================
+   CONTACTO
+========================================== */
+
+.footer__contact{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:.75rem;
+
+    margin-top:var(--space-lg);
+
+    font-size:1rem;
+
+    color:var(--color-text-muted);
+
+}
+
+.footer__contact i{
+
+    color:var(--color-secondary);
+
+    font-size:1.1rem;
+
+}
+
+.footer__contact a{
+
+    transition:var(--transition-fast);
+
+}
+
+.footer__contact a:hover{
+
+    color:var(--color-secondary);
+
+}

@@ -45,3 +45,49 @@ if ("IntersectionObserver" in window) {
     });
 
 }
+
+/* ==========================================
+   CONTROL DE VIDEOS SEGÚN VISIBILIDAD
+========================================== */
+
+const pageVideos = document.querySelectorAll(
+    ".chapter__video video, .introduction__video video"
+);
+
+if ("IntersectionObserver" in window) {
+
+    const videoObserver = new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                const video = entry.target;
+
+                if (entry.isIntersecting) {
+
+                    if (video.dataset.wasPlaying === "true") {
+                        video.play().catch(() => {});
+                    }
+
+                } else {
+
+                    video.dataset.wasPlaying =
+                        video.paused ? "false" : "true";
+
+                    video.pause();
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.25
+        }
+    );
+
+    pageVideos.forEach(video => {
+        videoObserver.observe(video);
+    });
+
+}

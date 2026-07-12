@@ -18,15 +18,14 @@
 
     /* colors */
 
-    --color-background: #0E141B;
-    --color-surface: #17212B;
-    --color-card: #22303D;
+    --color-background: #050608;
+    --color-surface: #0D1117;
+    --color-card: #151B23;
+    --color-primary: #3B82F6;
+    --color-secondary: #F4F4F5;
 
-    --color-primary: #2F80ED;
-    --color-secondary: #D6B35A;
-
-    --color-text: #F9FAFB;
-    --color-text-muted: #B8C0CC;
+    --color-text: #FFFFFF;
+    --color-text-muted: #A8B0BC;
 
     --color-success: #2ECC71;
     --color-warning: #F2C94C;
