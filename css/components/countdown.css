@@ -87,3 +87,29 @@
     color:var(--color-text-muted);
 
 }
+
+/* ==================================================
+   COUNTDOWN SECTION
+================================================== */
+
+.countdown-section {
+    background:
+        linear-gradient(
+            135deg,
+            var(--color-surface),
+            var(--color-background)
+        );
+}
+
+.countdown-section .countdown {
+    justify-content: center;
+}
+
+.countdown-section .countdown__item {
+    min-width: 130px;
+    padding: var(--space-lg);
+}
+
+.countdown-section .countdown__item span {
+    font-size: var(--fs-3xl);
+}

@@ -89,122 +89,113 @@
 
 }
 
-/* ==================================================
-   CAPÍTULOS
-================================================== */
-
-.chapter__video{
-
-    margin:3rem 0;
-
+.section,
+.chapter {
+    padding: var(--section-padding) 0;
+    scroll-margin-top: var(--scroll-offset);
 }
 
-.chapter__video video{
-
-    width:100%;
-
-    border-radius:var(--radius-lg);
-
-    box-shadow:var(--shadow-lg);
-
-}
-
-.chapter__content{
-
-    max-width:900px;
-
-}
-
-.chapter__content p{
-
-    margin-bottom:1.5rem;
-
+.chapter {
+    padding-top: calc(var(--section-padding)+2rem);
+    padding-bottom: var(--section-padding);
 }
 
 /* ==================================================
    CHAPTERS
 ================================================== */
 
-.chapter{
-
-    padding: var(--space-4xl) 0;
+.chapter__header{
+    max-width: 950px;
+    text-align:center;
+    margin:0 auto var(--space-3xl);
+    padding-inline: var(--space-md);
 
 }
 
-.chapter__header{
+.chapter__header .chapter-label {
+    margin-bottom: var(--space-md);
 
-    text-align:center;
-
-    margin-bottom:3rem;
-
+    font-size: clamp(.95rem, 1.2vw, 1.15rem);
+    font-weight: 700;
+    letter-spacing: .22em;
 }
 
 .chapter__header h2{
-
-    margin-top:1rem;
-
-    margin-bottom:1rem;
-
+    margin: 0 0 var(--space-lg);
+    font-size: clamp(2.7rem, 5vw, 4.5rem);
+    line-height: 1.1;
 }
 
 .chapter__header .lead{
+    max-width: 850px;
+    margin-inline: auto;
 
-    max-width:850px;
-
-    margin:auto;
-
+    font-size: clamp(1.1rem, 1.7vw, 1.35rem);
+    line-height: 1.8;
 }
 
 .chapter__video{
-
-    margin:3rem auto;
-
-    max-width:1000px;
-
+    margin:0 auto var(--space-3xl);
+    width:min(100%, 1000px);
 }
 
 .chapter__video video{
-
     width:100%;
-
     display:block;
-
-    border-radius:var(--radius-lg);
-
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius:var(--video-radius);
     box-shadow:var(--shadow-lg);
-
 }
 
 .chapter__content{
     max-width:900px;
-    margin:auto;
+    margin-inline:auto;
 }
 
-.chapter__content p{
-    text-align:justify;
-    margin-bottom:2rem;
+.chapter__content > p{
+    margin-bottom: var(--space-lg);
+    font-size: clamp(1rem, 1.3vw, 1.15rem);
+    line-height: 1.9;
 }
 
 .chapter__image{
-    margin:3rem auto;
+    margin:var(--space-2xl) auto;
     text-align:center;
 }
 
 .chapter__image img{
     width:100%;
-    max-width:850px;
+    max-height: 520px;
+    object-fit: cover;
     border-radius:var(--radius-lg);
     box-shadow:var(--shadow-md);
 }
 
 .chapter__image figcaption{
 
-    margin-top:1rem;
-
+    margin-top:var(--space-sm);
     font-size:var(--fs-sm);
-
     color:var(--color-text-muted);
-
     font-style:italic;
+}
 
+/* ==================================================
+   MISIÓN Y VISIÓN
+================================================== */
+
+.project {
+    background: var(--color-background);
+}
+
+.project .intro__card p + p {
+    margin-top: var(--space-sm);
+}
+
+.repository__grid,
+.toolbox__grid,
+.infographics__grid,
+.intro__grid,
+.countdown {
+    margin-top: var(--space-2xl);
 }

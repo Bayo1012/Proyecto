@@ -10,29 +10,38 @@ window.addEventListener("load",()=>{
 
 });
 
-
 /* ==========================================
-   SCROLL ANIMATION
+   ANIMACIONES AL HACER SCROLL
 ========================================== */
 
-const observer=new IntersectionObserver(entries=>{
+const animatedElements = document.querySelectorAll(".fade-up");
 
-    entries.forEach(entry=>{
+if ("IntersectionObserver" in window) {
 
-        if(entry.isIntersecting){
+    const observer = new IntersectionObserver(
+        entries => {
 
-            entry.target.classList.add("show");
-
+            entries.forEach(entry => {
+                entry.target.classList.toggle(
+                    "show",
+                    entry.isIntersecting
+                );
+            });
+        },
+        {
+            threshold: 0.15,
+            rootMargin: "-8% 0px -8% 0px"
         }
+    );
 
+    animatedElements.forEach(element => {
+        observer.observe(element);
     });
 
-},{
-    threshold:.2
-});
+} else {
 
-document.querySelectorAll(".fade-up").forEach(section=>{
+    animatedElements.forEach(element => {
+        element.classList.add("show");
+    });
 
-    observer.observe(section);
-
-});
+}

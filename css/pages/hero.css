@@ -50,10 +50,10 @@
 .hero__container{
     position: relative;
     z-index: 1;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: 4rem;
 }
 
 /* ==================================================
@@ -63,33 +63,33 @@
 .hero__content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    max-width: 700px;
+
+    max-width: 760px;
     gap: 1.5rem;
 }
 
 .hero__title{
-    max-width: 650px;
-    font-size: clamp(3.5rem,6vw,5rem);
-    line-height: 1.05;
+    max-width: 750px;
+    font-size: clamp(4rem, 8vw, 7rem);
+    line-height: .98;
     font-weight: 700;
-    letter-spacing: -2px;
-    margin:0;
+    letter-spacing: -.04em;
 
 }
 
 .hero__subtitle{
-    font-size: 2.6rem;
+    max-width: 700px;
+    font-size: clamp(1.7rem, 3vw, 2.6rem);
+    font-weight: 600;
+    line-height: 1.25;
     color: var(--color-secondary);
-    font-weight: 500;
 }
 
 .hero__description{
-    max-width: 600px;
-    font-size: 1.08rem;
-    color:var(--color-text-muted);
-    line-height: 1.9;
+    max-width: 700px;
+    font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+    line-height: 1.85;
 }
 
 .hero__button{
@@ -137,21 +137,24 @@
 }
 
 .hero .chapter-label{
-
     margin-bottom:.5rem;
-
     padding:.45rem 1rem;
-
     border:1px solid rgba(214,179,90,.35);
-
     border-radius:var(--radius-full);
-
     background:rgba(214,179,90,.08);
-
 }
 
 .countdown{
-
     margin-top:2rem;
+}
 
+.hero__quote {
+    max-width: 620px;
+    padding-left: var(--space-md);
+    border-left: 3px solid var(--color-secondary);
+    font-family: var(--font-accent);
+    font-size: var(--fs-lg);
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--color-text);
 }

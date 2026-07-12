@@ -91,3 +91,45 @@
     color:var(--color-text-muted);
 
 }
+
+/* ==================================================
+   FOOTER SOCIAL
+================================================== */
+
+.footer__social {
+    text-align: center;
+}
+
+.footer__social h4 {
+    margin-bottom: var(--space-sm);
+}
+
+.footer__social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.footer__social-links a {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-card);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: var(--radius-full);
+
+    font-size: 1.25rem;
+    color: var(--color-text);
+
+    transition: var(--transition-normal);
+}
+
+.footer__social-links a:hover {
+    transform: translateY(-4px);
+    color: var(--color-secondary);
+    box-shadow: var(--shadow-sm);
+}

@@ -3,14 +3,16 @@
 ========================================== */
 
 const sidebarLinks = document.querySelectorAll(".sidebar__link");
+const sections = document.querySelectorAll("main section[id]");
 
+/* Cambiar el enlace activo al hacer clic */
 sidebarLinks.forEach(link => {
 
     link.addEventListener("click", () => {
 
-        sidebarLinks.forEach(item =>
-            item.classList.remove("active")
-        );
+        sidebarLinks.forEach(item => {
+            item.classList.remove("active");
+        });
 
         link.classList.add("active");
 
@@ -19,40 +21,50 @@ sidebarLinks.forEach(link => {
 });
 
 /* ==========================================
-   ACTIVE SECTION ON SCROLL
+   ACTUALIZAR SEGÚN EL SCROLL
 ========================================== */
 
-const sections = document.querySelectorAll("main section");
+function updateActiveSection() {
 
-window.addEventListener("scroll", () => {
+    const scrollPosition =
+        window.scrollY + window.innerHeight * 0.35;
 
-    let current = "";
+    let currentSectionId = "";
 
     sections.forEach(section => {
 
-        const sectionTop = section.offsetTop - 120;
+        const sectionTop = section.offsetTop;
+        const sectionBottom =
+            sectionTop + section.offsetHeight;
 
-        const sectionHeight = section.offsetHeight;
-
-        if (window.scrollY >= sectionTop &&
-            window.scrollY < sectionTop + sectionHeight) {
-
-            current = section.getAttribute("id");
-
+        if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionBottom
+        ) {
+            currentSectionId = section.id;
         }
 
     });
+
+    if (!currentSectionId) {
+        return;
+    }
 
     sidebarLinks.forEach(link => {
 
-        link.classList.remove("active");
+        const linkTarget = link.getAttribute("href");
 
-        if (link.getAttribute("href") === "#" + current) {
-
-            link.classList.add("active");
-
-        }
+        link.classList.toggle(
+            "active",
+            linkTarget === `#${currentSectionId}`
+        );
 
     });
 
-});
+}
+
+/* Ejecutar al cargar */
+window.addEventListener("load", updateActiveSection);
+
+/* Ejecutar al hacer scroll */
+window.addEventListener("scroll", updateActiveSection);

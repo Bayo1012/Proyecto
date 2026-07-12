@@ -40,10 +40,10 @@
          CSS BASE
     ========================================== -->
 
+    <link rel="stylesheet" href="css/base/variables.css">
     <link rel="stylesheet" href="css/base/reset.css">
     <link rel="stylesheet" href="css/base/typography.css">
     <link rel="stylesheet" href="css/base/utilities.css">
-    <link rel="stylesheet" href="css/base/variables.css">
 
     <!-- =========================================
          LAYOUT
@@ -73,6 +73,7 @@
     <link rel="stylesheet" href="css/pages/hero.css">
     <link rel="stylesheet" href="css/pages/infographics.css">
     <link rel="stylesheet" href="css/pages/repository.css">
+    <link rel="stylesheet" href="css/pages/sections.css">
     <link rel="stylesheet" href="css/pages/team.css">
     <link rel="stylesheet" href="css/pages/toolbox.css">
 
@@ -128,52 +129,94 @@
 
             <ul class="sidebar__menu">
 
+                <!-- Inicio -->
                 <li class="sidebar__item">
                     <a href="#inicio" class="sidebar__link active">
-                        <i class="bi bi-house-door sidebar__icon"></i>
-                        <span class="sidebar__text">Inicio</span>
+                        <span class="sidebar__icon">
+                            <i class="bi bi-house-door-fill"></i>
+                        </span>
+
+                        <span class="sidebar__text">
+                            Inicio
+                        </span>
                     </a>
                 </li>
 
-                <li class="sidebar__item">
-                    <a href="#introduccion" class="sidebar__link">
-                        <i class="bi bi-book sidebar__icon"></i>
-                        <span class="sidebar__text">Introducción</span>
-                    </a>
-                </li>
-
+                <!-- Capítulo I -->
                 <li class="sidebar__item">
                     <a href="#capitulo1" class="sidebar__link">
-                        <i class="bi bi-1-circle sidebar__icon"></i>
-                        <span class="sidebar__text">Capítulo I</span>
+                        <span class="sidebar__icon">
+                            <i class="bi bi-film"></i>
+                        </span>
+
+                        <span class="sidebar__text">
+                            Capítulo I
+                        </span>
                     </a>
                 </li>
 
+                <!-- Capítulo II -->
                 <li class="sidebar__item">
                     <a href="#capitulo2" class="sidebar__link">
-                        <i class="bi bi-2-circle sidebar__icon"></i>
-                        <span class="sidebar__text">Capítulo II</span>
+                        <span class="sidebar__icon">
+                            <i class="bi bi-camera-reels-fill"></i>
+                        </span>
+
+                        <span class="sidebar__text">
+                            Capítulo II
+                        </span>
                     </a>
                 </li>
 
-                <li class="sidebar__item">
-                    <a href="#capitulo3" class="sidebar__link">
-                        <i class="bi bi-3-circle sidebar__icon"></i>
-                        <span class="sidebar__text">Capítulo III</span>
-                    </a>
-                </li>
-
-                <li class="sidebar__item">
-                    <a href="#capitulo4" class="sidebar__link">
-                        <i class="bi bi-4-circle sidebar__icon"></i>
-                        <span class="sidebar__text">Capítulo IV</span>
-                    </a>
-                </li>
-
+                <!-- Repositorio -->
                 <li class="sidebar__item">
                     <a href="#repositorio" class="sidebar__link">
-                        <i class="bi bi-folder sidebar__icon"></i>
-                        <span class="sidebar__text">Repositorio</span>
+                        <span class="sidebar__icon">
+                            <i class="bi bi-collection-play-fill"></i>
+                        </span>
+
+                        <span class="sidebar__text">
+                            Repositorio
+                        </span>
+                    </a>
+                </li>
+
+                <!-- Herramientas -->
+                <li class="sidebar__item">
+                    <a href="#herramientas" class="sidebar__link">
+                        <span class="sidebar__icon">
+                            <i class="bi bi-tools"></i>
+                        </span>
+
+                        <span class="sidebar__text">
+                            Herramientas
+                        </span>
+                    </a>
+                </li>
+
+                <!-- Infografías -->
+                <li class="sidebar__item">
+                    <a href="#infografias" class="sidebar__link">
+                        <span class="sidebar__icon">
+                            <i class="bi bi-bar-chart-fill"></i>
+                        </span>
+
+                        <span class="sidebar__text">
+                            Infografías
+                        </span>
+                    </a>
+                </li>
+
+                <!-- Proyecto -->
+                <li class="sidebar__item">
+                    <a href="#proyecto" class="sidebar__link">
+                        <span class="sidebar__icon">
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </span>
+
+                        <span class="sidebar__text">
+                            Proyecto
+                        </span>
                     </a>
                 </li>
 
@@ -190,25 +233,25 @@
     <main>
 
         <!-- =========================================
-            HERO
+            INICIO / HERO
         ========================================= -->
 
-        <section id="hero" class="hero">
+        <section id="inicio" class="hero">
 
             <!-- Video de fondo -->
 
-            <video 
-                class="hero__video" 
-                autoplay 
-                muted 
-                loop 
+            <video
+                class="hero__video"
+                autoplay
+                muted
+                loop
                 playsinline
                 preload="metadata"
                 poster="assets/images/hero/hero-poster.jpg">
 
-                <source 
-                src="assets/videos/hero/video-hero.mp4" 
-                type="video/mp4">
+                <source
+                    src="assets/videos/capitulo1.mp4"
+                    type="video/mp4">
 
                 Tu navegador no soporta videos HTML5.
 
@@ -218,18 +261,14 @@
 
             <div class="hero__overlay"></div>
 
-            <!-- Contenido -->
+            <!-- Contenido principal -->
 
             <div class="container hero__container">
-
-                <!-- =========================================
-                    COLUMNA IZQUIERDA
-                ========================================== -->
 
                 <div class="hero__content">
 
                     <span class="chapter-label">
-                        Docuweb Educativo
+                        Docuweb educativo
                     </span>
 
                     <h1 class="hero__title">
@@ -237,84 +276,44 @@
                     </h1>
 
                     <p class="hero__subtitle">
-                        Alfabetización Audiovisual
+                        De espectadores a creadores
                     </p>
 
                     <p class="hero__description">
-
-                        Descubre la importancia del lenguaje audiovisual,
-                        conoce el legado de Armando Robles Godoy
-                        y explora recursos educativos mediante
-                        una experiencia interactiva.
-
+                        Un recorrido por la alfabetización audiovisual y la
+                        transformación de estudiantes que descubren una nueva
+                        forma de observar, interpretar y crear historias mediante
+                        imágenes, sonidos y recursos audiovisuales.
                     </p>
 
-                    <a href="#introduccion" class="btn hero__button">
+                    <p class="hero__quote">
+                        Cada imagen cuenta una historia. Aprender a leerla también
+                        transforma nuestra manera de ver el mundo.
+                    </p>
 
-                        Explorar contenido
+                    <a
+                        href="#capitulo1"
+                        class="btn hero__button"
+                        aria-label="Comenzar el recorrido por Aula Visual">
+
+                        Comenzar el viaje
+
                         <i class="bi bi-arrow-right"></i>
 
                     </a>
 
-                    <!-- Cuenta regresiva -->
-
-                    <div class="countdown">
-
-                        <div class="countdown__item">
-                            <span id="days">00</span>
-                            <small>Días</small>
-                        </div>
-
-                        <div class="countdown__item">
-                            <span id="hours">00</span>
-                            <small>Horas</small>
-                        </div>
-
-                        <div class="countdown__item">
-                            <span id="minutes">00</span>
-                            <small>Min</small>
-                        </div>
-
-                        <div class="countdown__item">
-                            <span id="seconds">00</span>
-                            <small>Seg</small>
-                        </div>
-
-                    </div>
-
                 </div>
-
-                <!-- =========================================
-                    COLUMNA DERECHA
-                ========================================== -->
-
-                <aside class="hero__card">
-
-                    <img
-                        src="assets/images/hero/robles-godoy.jpg"
-                        alt="Armando Robles Godoy"
-                        class="hero__card-image"
-                    >
-
-                    <div class="hero__card-content">
-
-                        <span class="chapter-label">
-                            Cineasta Peruano
-                        </span>
-
-                        <h2>Armando Robles Godoy</h2>
-
-                        <p>Aquí irá la información proporcionada por el grupo.</p>
-
-                    </div>
-
-                </aside>
 
             </div>
 
-            <!-- Scroll -->
+            <!-- Indicador de desplazamiento -->
 
-            <a href="#introduccion" class="hero__scroll">
+            <a
+                href="#capitulo1"
+                class="hero__scroll"
+                aria-label="Ir al Capítulo I">
+
+                <span>Explorar</span>
 
                 <i class="bi bi-chevron-double-down"></i>
 
@@ -323,174 +322,126 @@
         </section>
 
         <!-- =========================================
-            INTRODUCTION
+            CAPITULO I
         ========================================== -->
-        <section id="introduccion" class="section fade-up">
+        <section id="capitulo1" class="chapter">
 
             <div class="container">
                 <header class="chapter__header">
-                    <span class="chapter-label">
-                        Introducción
+                    <span class="chapter-label fade-up">
+                        Capitulo I
                     </span>
 
-                    <h2>
-                        Introducción a la alfabetización audiovisual
+                    <h2 class="fade-up fade-delay-1">
+                        El otro Analfabetismo
                     </h2>
 
-                    <p class="lead">
-
-                        Este capítulo presenta los conceptos fundamentales de la
-                        alfabetización audiovisual y su importancia en la educación.
-
+                    <p class="lead fade-up fade-delay-2">
+                        Comprender el lenguaje audiovisual es fundamental
+                        para desarrollar una mirada crítica frente a las
+                        imágenes, los medios y los contenidos digitales que
+                        forman parte de nuestra vida cotidiana.
                     </p>
                 </header>
 
-            <div class="chapter__video">
+                <div class="chapter__video fade-up">
 
-                <video controls preload="metadata">
-
-                    <source
-                        src="assets/videos/capitulo1.mp4"
-                        type="video/mp4">
-
-                    Tu navegador no soporta videos.
-
-                </video>
-
-            </div>
-
-            <div class="chapter__content">
-
-                <p>
-
-                    Aquí irá el contenido correspondiente al primer capítulo.
-                    Este texto será reemplazado por la información definitiva
-                    proporcionada por la institución.
-
-                </p>
-
-                <figure class="chapter__image">
-
-                    <img
-                        src="assets/images/chapters/capitulo1.jpg"
-                        alt="Imagen del capítulo">
-
-                    <figcaption>
-
-                        Imagen de apoyo del capítulo.
-
-                    </figcaption>
-
-                </figure>
-
-                <p>
-
-                    Este espacio permitirá complementar el video con
-                    explicaciones e imágenes que faciliten la comprensión
-                    del contenido.
-
-                </p>
-
-            </div>
-
-            
-
-            </div>
-        </section>
-
-        <!-- =========================================
-            CAPÍTULO I
-        ========================================= -->
-
-        <section id="capitulo1" class="chapter fade-up">
-
-            <div class="container">
-
-                <header class="chapter__header">
-
-                    <span class="chapter-label">
-                        Capítulo I
-                    </span>
-
-                    <h2>
-                        Titulo del capitulo
-                    </h2>
-
-                    <p class="lead">
-
-                        En este capítulo se presentan los conceptos básicos
-                        de la alfabetización audiovisual y su importancia
-                        dentro del ámbito educativo.
-
-                    </p>
-
-                </header>
-
-                <!-- Video -->
-                <div class="chapter__video">
-
-                    <video controls preload="metadata">
+                    <video controls preload="metadata" playsinline>
 
                         <source
                             src="assets/videos/capitulo1.mp4"
                             type="video/mp4">
 
-                        Tu navegador no soporta videos.
+                        Tu navegador no soporta la reproduccion de video.
 
                     </video>
 
                 </div>
 
-                <!-- Texto -->
-
                 <div class="chapter__content">
 
-                    <p>
-                        Aquí irá el contenido del capítulo del docuweb.
+                    <p class="fade-up">
+                        Armando Robles Godoy planteó la existencia de una forma
+                        de analfabetismo que no se relaciona con la incapacidad
+                        de leer palabras, sino con la dificultad para interpretar
+                        el lenguaje de las imágenes.
+                    </p>
+
+                    <p class="fade-up">
+                        Aunque diariamente observamos películas, publicaciones,
+                        anuncios y videos en redes sociales, no siempre conocemos
+                        los recursos utilizados para construir esos mensajes ni
+                        la intención que existe detrás de ellos.
+                    </p>
+
+                    <figure class="chapter__image fade-up">
+
+                        <img
+                            src="assets/images/chapters/robles-godoy.jpg"
+                            alt="Armando Robles Godoy">
+
+                        <figcaption>
+                            Armando Robles Godoy, cineasta peruano y referente
+                            de la alfabetización audiovisual.
+                        </figcaption>
+
+                    </figure>
+
+                    <p class="fade-up">
+                        La alfabetización audiovisual busca que las personas
+                        dejen de ser únicamente espectadoras pasivas y aprendan
+                        a reconocer cómo los planos, los sonidos, el montaje y
+                        la composición producen significados y emociones.
+                    </p>
+
+                    <p class="fade-up">
+                        Este conocimiento permite analizar críticamente los
+                        contenidos que consumimos y utilizar las herramientas
+                        audiovisuales para comunicar ideas, experiencias y
+                        realidades propias.
                     </p>
 
                 </div>
-
             </div>
 
         </section>
 
         <!-- =========================================
             CAPÍTULO II
+            MINKA AUDIOVISUAL
         ========================================= -->
 
-        <section id="capitulo2" class="chapter fade-up">
+        <section id="capitulo2" class="chapter">
 
             <div class="container">
-
                 <header class="chapter__header">
 
-                    <span class="chapter-label">
+                    <span class="chapter-label fade-up">
                         Capítulo II
                     </span>
 
-                    <h2>
-                        Titulo del capitulo
+                    <h2 class="fade-up fade-delay-1">
+                        MINKA Audiovisual
                     </h2>
 
-                    <p class="lead">
-
-                        En este capítulo ...
-
+                    <p class="lead fade-up fade-delay-2">
+                        Una experiencia comunitaria que demuestra cómo el
+                        lenguaje audiovisual puede convertirse en una
+                        herramienta de aprendizaje, expresión y transformación.
                     </p>
 
                 </header>
 
                 <!-- Video -->
-                <div class="chapter__video">
+                <div class="chapter__video fade-up">
 
-                    <video controls preload="metadata">
+                    <video controls preload="metadata" playsinline>
 
                         <source
-                            src="assets/videos/capitulo2.mp4"
+                            src="assets/videos/capitulo1.mp4"
                             type="video/mp4">
 
-                        Tu navegador no soporta videos.
+                        Tu navegador no soporta la reproduccion de videos.
 
                     </video>
 
@@ -500,8 +451,50 @@
 
                 <div class="chapter__content">
 
-                    <p>
-                        Aquí irá el contenido del capítulo del docuweb.
+                    <p class="fade-up">
+                        MINKA Audiovisual es un antecedente cercano a la
+                        propuesta de Aula Visual. Su experiencia permite
+                        observar cómo la enseñanza del lenguaje cinematográfico
+                        puede acercarse a estudiantes y comunidades mediante
+                        actividades participativas.
+                    </p>
+
+                    <p class="fade-up">
+                        A través de talleres y procesos de creación colectiva,
+                        los participantes no solo aprenden aspectos técnicos,
+                        sino que también encuentran nuevas formas de narrar su
+                        entorno, expresar sus ideas y representar su realidad.
+                    </p>
+
+                    <!-- Imagen o recurso de MINKA -->
+
+                    <figure class="chapter__image fade-up">
+
+                        <img
+                            src="assets/images/chapters/minka-audiovisual.jpg"
+                            alt="Actividad educativa de MINKA Audiovisual">
+
+                        <figcaption>
+                            MINKA Audiovisual como referente de formación y
+                            creación audiovisual comunitaria.
+                        </figcaption>
+
+                    </figure>
+
+                    <p class="fade-up">
+                        Este antecedente orienta la propuesta de Aula Visual,
+                        que llevará conocimientos básicos de producción
+                        audiovisual a estudiantes de colegios públicos y
+                        promoverá el uso consciente del teléfono celular como
+                        una herramienta creativa y educativa.
+                    </p>
+
+                    <p class="fade-up">
+                        La experiencia de MINKA permite comprender que la
+                        alfabetización audiovisual no termina en el dominio de
+                        una cámara: también implica aprender a trabajar en
+                        equipo, construir mensajes y participar activamente en
+                        la representación de la comunidad.
                     </p>
 
                 </div>
@@ -512,52 +505,130 @@
 
         <!-- =========================================
             CAPÍTULO III
+            REPOSITORIO
         ========================================= -->
 
-        <section id="capitulo3" class="chapter fade-up">
+        <section id="repositorio" class="section repository">
 
             <div class="container">
 
                 <header class="chapter__header">
 
-                    <span class="chapter-label">
+                    <span class="chapter-label fade-up">
                         Capítulo III
                     </span>
 
-                    <h2>
-                        Titulo del capitulo
+                    <h2 class="fade-up fade-delay-1">
+                        Historias en un Minuto
                     </h2>
 
-                    <p class="lead">
-
-                        En este capítulo ...
-
+                    <p class="lead fade-up fade-delay-2">
+                        Este repositorio reunirá los celumetrajes creados por
+                        los estudiantes durante el concurso de Aula Visual.
+                        Las producciones serán publicadas cuando finalicen los
+                        talleres y el proceso de evaluación.
                     </p>
 
                 </header>
 
-                <!-- Video -->
-                <div class="chapter__video">
+                <div class="repository__grid">
 
-                    <video controls preload="metadata">
+                    <article class="repository-card fade-up">
 
-                        <source
-                            src="assets/videos/capitulo3.mp4"
-                            type="video/mp4">
+                        <div class="repository-card__preview">
 
-                        Tu navegador no soporta videos.
+                            <i class="bi bi-play-circle"></i>
 
-                    </video>
+                            <span>
+                                Próximamente
+                            </span>
+
+                        </div>
+
+                        <div class="repository-card__content">
+
+                            <h3>
+                                Historia en un Minuto 01
+                            </h3>
+
+                            <p>
+                                Próxima producción audiovisual realizada por
+                                estudiantes participantes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="repository-card fade-up fade-delay-1">
+
+                        <div class="repository-card__preview">
+
+                            <i class="bi bi-play-circle"></i>
+
+                            <span>
+                                Próximamente
+                            </span>
+
+                        </div>
+
+                        <div class="repository-card__content">
+
+                            <h3>
+                                Historia en un Minuto 02
+                            </h3>
+
+                            <p>
+                                Próxima producción audiovisual realizada por
+                                estudiantes participantes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="repository-card fade-up fade-delay-2">
+
+                        <div class="repository-card__preview">
+
+                            <i class="bi bi-play-circle"></i>
+
+                            <span>
+                                Próximamente
+                            </span>
+
+                        </div>
+
+                        <div class="repository-card__content">
+
+                            <h3>
+                                Historia en un Minuto 03
+                            </h3>
+
+                            <p>
+                                Próxima producción audiovisual realizada por
+                                estudiantes participantes.
+                            </p>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
-                <!-- Texto -->
+                <div class="repository__action fade-up">
 
-                <div class="chapter__content">
+                    <a
+                        href="assets/documents/bases-concurso.pdf"
+                        class="btn"
+                        target="_blank"
+                        rel="noopener">
 
-                    <p>
-                        Aquí irá el contenido del capítulo del docuweb.
-                    </p>
+                        <i class="bi bi-file-earmark-pdf"></i>
+
+                        Ver bases del concurso
+
+                    </a>
 
                 </div>
 
@@ -567,52 +638,179 @@
 
         <!-- =========================================
             CAPÍTULO IV
+            CAJA DE HERRAMIENTAS
         ========================================= -->
 
-        <section id="capitulo4" class="chapter fade-up">
+        <section id="herramientas" class="section toolbox">
 
             <div class="container">
 
                 <header class="chapter__header">
 
-                    <span class="chapter-label">
+                    <span class="chapter-label fade-up">
                         Capítulo IV
                     </span>
 
-                    <h2>
-                        Titulo del capitulo
+                    <h2 class="fade-up fade-delay-1">
+                        Caja de Herramientas
                     </h2>
 
-                    <p class="lead">
-
-                        En este capítulo ...
-
+                    <p class="lead fade-up fade-delay-2">
+                        Accede a materiales educativos, documentos del concurso
+                        y recursos que facilitarán la aplicación de la
+                        alfabetización audiovisual dentro del aula.
                     </p>
 
                 </header>
 
-                <!-- Video -->
-                <div class="chapter__video">
+                <div class="toolbox__grid">
 
-                    <video controls preload="metadata">
+                    <!-- Syllabus -->
 
-                        <source
-                            src="assets/videos/capitulo4.mp4"
-                            type="video/mp4">
+                    <article class="tool-card fade-up">
 
-                        Tu navegador no soporta videos.
+                        <div class="tool-card__icon">
+                            <i class="bi bi-journal-text"></i>
+                        </div>
 
-                    </video>
+                        <div class="tool-card__content">
+
+                            <h3>
+                                Syllabus del taller
+                            </h3>
+
+                            <p>
+                                Consulta la planificación, los contenidos y las
+                                actividades del taller de alfabetización
+                                audiovisual con celulares.
+                            </p>
+
+                            <a
+                                href="assets/documents/syllabus.pdf"
+                                class="btn"
+                                target="_blank"
+                                rel="noopener">
+
+                                <i class="bi bi-download"></i>
+
+                                Descargar syllabus
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Bases -->
+
+                    <article class="tool-card fade-up fade-delay-1">
+
+                        <div class="tool-card__icon">
+                            <i class="bi bi-file-earmark-check"></i>
+                        </div>
+
+                        <div class="tool-card__content">
+
+                                <h3>
+                                    Bases del concurso
+                                </h3>
+
+                                <p>
+                                    Revisa los requisitos, criterios de evaluación
+                                    y condiciones del concurso “Historias en un
+                                    Minuto”.
+                                </p>
+
+                                <a
+                                    href="assets/documents/bases-concurso.pdf"
+                                    class="btn"
+                                    target="_blank"
+                                    rel="noopener">
+
+                                    <i class="bi bi-file-earmark-pdf"></i>
+
+                                    Ver bases
+
+                                </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Recursos didácticos -->
+
+                    <article class="tool-card fade-up fade-delay-2">
+
+                        <div class="tool-card__icon">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+
+                        <div class="tool-card__content">
+
+                            <h3>
+                                Recursos didácticos
+                            </h3>
+
+                            <p>
+                                Materiales de apoyo para docentes interesados en
+                                incorporar conceptos audiovisuales en sus
+                                actividades educativas.
+                            </p>
+
+                            <a
+                                href="assets/documents/recursos-didacticos.pdf"
+                                class="btn"
+                                target="_blank"
+                                rel="noopener">
+
+                                <i class="bi bi-download"></i>
+
+                                Descargar recursos
+
+                            </a>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
-                <!-- Texto -->
+                <!-- Videos de invitación -->
 
-                <div class="chapter__content">
+                <div class="invitation-videos">
 
-                    <p>
-                        Aquí irá el contenido del capítulo del docuweb.
+                    <h3 class="fade-up">
+                        Videos de invitación
+                    </h3>
+
+                    <p class="fade-up">
+                        Próximamente se publicarán los mensajes de invitación
+                        dirigidos a estudiantes y docentes.
                     </p>
+
+                    <div class="invitation-videos__grid">
+
+                        <article class="invitation-card fade-up">
+
+                            <i class="bi bi-camera-video"></i>
+
+                            <span>
+                                Próximamente
+                            </span>
+
+                        </article>
+
+                        <article class="invitation-card fade-up fade-delay-1">
+
+                            <i class="bi bi-camera-video"></i>
+
+                            <span>
+                                Próximamente
+                            </span>
+
+                        </article>
+
+                    </div>
 
                 </div>
 
@@ -621,70 +819,240 @@
         </section>
 
         <!-- =========================================
-            REPOSITORIO
+            INFOGRAFÍAS
         ========================================= -->
 
-        <section id="repositorio" class="chapter fade-up">
+        <section id="infografias" class="section infographics">
 
             <div class="container">
 
                 <header class="chapter__header">
 
-                    <span class="chapter-label">
-                        Repositorio
+                    <span class="chapter-label fade-up">
+                        Recursos visuales
                     </span>
 
-                    <h2>
-                        Titulo
+                    <h2 class="fade-up fade-delay-1">
+                        Infografías
                     </h2>
 
-                    <p class="lead">
-
-                        En este apartado ...
-
+                    <p class="lead fade-up fade-delay-2">
+                        Materiales visuales diseñados para explicar de manera
+                        sencilla conceptos fundamentales de alfabetización
+                        audiovisual y producción cinematográfica.
                     </p>
 
                 </header>
 
-                <!-- Video -->
-                <div class="chapter__video">
+                <div class="infographics__grid">
 
-                    <video controls preload="metadata">
+                    <article class="infographic-card fade-up">
 
-                        <source
-                            src="assets/videos/repositorio.mp4"
-                            type="video/mp4">
+                        <div class="infographic-card__preview">
 
-                        Tu navegador no soporta videos.
+                            <i class="bi bi-file-earmark-image"></i>
 
-                    </video>
+                            <span>
+                                Próximamente
+                            </span>
 
-                </div>
+                        </div>
 
-                <!-- Texto -->
+                        <div class="infographic-card__content">
 
-                <div class="chapter__content">
+                            <h3>
+                                El Otro Analfabetismo
+                            </h3>
 
-                    <p>
-                        Aquí irá el video editado de todo.
-                    </p>
+                            <p>
+                                Infografía sobre la importancia de aprender a
+                                interpretar imágenes, sonidos y mensajes
+                                audiovisuales.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="infographic-card fade-up fade-delay-1">
+
+                        <div class="infographic-card__preview">
+
+                            <i class="bi bi-camera-reels"></i>
+
+                            <span>
+                                Próximamente
+                            </span>
+
+                            <img
+                                src="assets/images/infographics/infografia-1.jpg"
+                                alt="Infografía sobre el otro analfabetismo">
+
+                        </div>
+
+                        <div class="infographic-card__content">
+
+                            <h3>
+                                Lenguaje audiovisual
+                            </h3>
+
+                            <p>
+                                Material visual sobre planos, ángulos, montaje
+                                y otros recursos básicos utilizados para
+                                construir una historia audiovisual.
+                            </p>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
             </div>
 
         </section>
+
         <!-- =========================================
-            FOOTER
+            MISIÓN Y VISIÓN
         ========================================= -->
 
-        <footer class="footer fade-up">
+        <section id="proyecto" class="section project">
+
+            <div class="container">
+
+                <header class="chapter__header">
+
+                    <span class="chapter-label fade-up">
+                        Aula Visual
+                    </span>
+
+                    <h2 class="fade-up fade-delay-1">
+                        Nuestro propósito
+                    </h2>
+
+                    <p class="lead fade-up fade-delay-2">
+                        Aula Visual busca acercar el conocimiento audiovisual
+                        de la universidad pública a las aulas escolares,
+                        promoviendo una formación crítica, creativa y accesible.
+                    </p>
+
+                </header>
+
+                <div class="intro__grid">
+
+                    <article class="intro__card fade-up">
+
+                        <h3>
+                            Misión
+                        </h3>
+
+                        <p>
+                            Alfabetizar audiovisualmente a estudiantes de
+                            secundaria de colegios nacionales mediante talleres
+                            teórico-prácticos e intensivos, transformándolos de
+                            espectadores pasivos en prosumidores críticos y
+                            creadores conscientes.
+                        </p>
+
+                        <p>
+                            A través del uso del teléfono celular como herramienta
+                            pedagógica y de pensamiento, promovemos el trabajo en
+                            equipo, la expresión audiovisual, el rigor narrativo
+                            y la lectura crítica de los mensajes mediáticos.
+                        </p>
+
+                    </article>
+
+                    <article class="intro__card fade-up fade-delay-1">
+
+                        <h3>
+                            Visión
+                        </h3>
+
+                        <p>
+                            Ser un proyecto universitario referente en la
+                            reducción del analfabetismo visual dentro del ámbito
+                            escolar peruano.
+                        </p>
+
+                        <p>
+                            Buscamos consolidar una plataforma digital que sirva
+                            como vitrina del talento estudiantil y como caja de
+                            herramientas didácticas de libre acceso para docentes,
+                            fortaleciendo el vínculo entre la universidad pública
+                            y la educación básica.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+            CUENTA REGRESIVA
+        ========================================= -->
+
+        <section id="cuenta-regresiva" class="section countdown-section">
+
+            <div class="container">
+
+                <header class="chapter__header">
+
+                    <span class="chapter-label fade-up">
+                        Próximo evento
+                    </span>
+
+                    <h2 class="fade-up fade-delay-1">
+                        Aula Visual está por comenzar
+                    </h2>
+
+                    <p class="lead fade-up fade-delay-2">
+                        Falta cada vez menos para iniciar esta experiencia de
+                        alfabetización audiovisual en las aulas escolares.
+                    </p>
+
+                </header>
+
+                <div class="countdown fade-up">
+
+                    <div class="countdown__item">
+                        <span id="days">00</span>
+                        <small>Días</small>
+                    </div>
+
+                    <div class="countdown__item">
+                        <span id="hours">00</span>
+                        <small>Horas</small>
+                    </div>
+
+                    <div class="countdown__item">
+                        <span id="minutes">00</span>
+                        <small>Minutos</small>
+                    </div>
+
+                    <div class="countdown__item">
+                        <span id="seconds">00</span>
+                        <small>Segundos</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+            REDES SOCIALES Y FOOTER
+        ========================================= -->
+
+        <footer id="footer" class="footer">
 
             <div class="container">
 
                 <div class="footer__content">
-
-                    <!-- Logo -->
 
                     <img
                         src="assets/images/logos/logo.png"
@@ -692,30 +1060,71 @@
                         class="footer__logo">
 
                     <h3>
-
                         Aula Visual
-
                     </h3>
 
                     <p>
-
-                        Docuweb sobre Alfabetización Audiovisual.
-
+                        Propuesta de alfabetización audiovisual contemporánea
+                        y su impacto en la educación.
                     </p>
+
+                    <div class="footer__social">
+
+                        <h4>
+                            Síguenos aquí
+                        </h4>
+
+                        <div class="footer__social-links">
+
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Instagram de Aula Visual">
+
+                                <i class="bi bi-instagram"></i>
+
+                            </a>
+
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Facebook de Aula Visual">
+
+                                <i class="bi bi-facebook"></i>
+
+                            </a>
+
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="TikTok de Aula Visual">
+
+                                <i class="bi bi-tiktok"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
 
                     <nav class="footer__nav">
 
-                        <a href="#hero">Inicio</a>
-
-                        <a href="#introduccion">Introducción</a>
+                        <a href="#inicio">Inicio</a>
 
                         <a href="#capitulo1">Capítulo I</a>
 
                         <a href="#capitulo2">Capítulo II</a>
 
-                        <a href="#capitulo3">Capítulo III</a>
+                        <a href="#repositorio">Repositorio</a>
 
-                        <a href="#capitulo4">Capítulo IV</a>
+                        <a href="#herramientas">Herramientas</a>
+
+                        <a href="#infografias">Infografías</a>
+
+                        <a href="#proyecto">Proyecto</a>
 
                     </nav>
 
@@ -724,9 +1133,7 @@
                 <div class="footer__bottom">
 
                     <p>
-
-                        © 2026 Aula Visual · Todos los derechos reservados.
-
+                        © 2026 Aula Visual. Todos los derechos reservados.
                     </p>
 
                 </div>
@@ -734,7 +1141,6 @@
             </div>
 
         </footer>
-
     </main>
 
     <!-- =========================================

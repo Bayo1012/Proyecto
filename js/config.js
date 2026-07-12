@@ -3,15 +3,5 @@
 ================================================== */
 
 const APP_CONFIG = {
-
-    /*
-        Fecha del evento.
-
-        IMPORTANTE:
-        Si el empleador cambia la fecha,
-        solo modifica esta línea.
-    */
-
-    countdownDate: "2026-12-15T23:59:59"
-
+    countdownDate: "2026-08-10T23:59:59"
 };
