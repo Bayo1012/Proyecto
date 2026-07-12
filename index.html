@@ -9,9 +9,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Aula Visual</title>
-
     <meta name="description" content="Docuweb sobre Alfabetización Audiovisual.">
 
     <!-- =========================================
@@ -26,7 +24,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- =========================================
@@ -98,11 +95,9 @@
     ========================================= -->
 
     <div id="loader">
-
         <img
             src="assets/images/logos/logo.png"
             alt="Aula Visual">
-
     </div>
 
     <!-- =========================================
@@ -114,19 +109,14 @@
         <!-- Logo -->
 
         <div class="sidebar__header">
-
             <a href="#inicio" class="sidebar__logo">
-
                 <img src="assets/images/logos/logo con blanco.png" alt="Logo Aula Visual">
-
             </a>
-
         </div>
 
         <!-- Navegación -->
 
         <nav class="sidebar__nav">
-
             <ul class="sidebar__menu">
 
                 <!-- Inicio -->
@@ -239,7 +229,6 @@
         <section id="inicio" class="hero">
 
             <!-- Video de fondo -->
-
             <video
                 class="hero__video"
                 autoplay
@@ -248,7 +237,6 @@
                 playsinline
                 preload="metadata"
                 poster="assets/images/hero/hero-poster.jpg">
-
                 <source
                     src="assets/videos/hero/fondo.mp4"
                     type="video/mp4">
@@ -258,52 +246,38 @@
             </video>
 
             <!-- Capa oscura -->
-
             <div class="hero__overlay"></div>
 
             <!-- Contenido principal -->
-
             <div class="container hero__container">
-
                 <div class="hero__content">
-
                     <span class="chapter-label">
                         Docuweb educativo
                     </span>
-
                     <h1 class="hero__title">
                         Aula Visual
                     </h1>
-
                     <p class="hero__subtitle">
                         De espectadores a creadores
                     </p>
-
                     <p class="hero__description">
                         Un recorrido por la alfabetización audiovisual y la
                         transformación de estudiantes que descubren una nueva
                         forma de observar, interpretar y crear historias mediante
                         imágenes, sonidos y recursos audiovisuales.
                     </p>
-
                     <p class="hero__quote">
                         Cada imagen cuenta una historia. Aprender a leerla también
                         transforma nuestra manera de ver el mundo.
                     </p>
-
                     <a
                         href="#introduccion"
                         class="btn hero__button"
                         aria-label="Ver la introducción de Aula Visual">
-
                         Comenzar el recorrido
-
                         <i class="bi bi-arrow-right"></i>
-
                     </a>
-
                 </div>
-
             </div>
 
             <!-- Indicador de desplazamiento -->
@@ -312,9 +286,7 @@
                 href="#introduccion"
                 class="hero__scroll"
                 aria-label="Ir a la introducción">
-
                 <span>Explorar</span>
-
                 <i class="bi bi-chevron-double-down"></i>
 
             </a>
@@ -946,102 +918,337 @@
 
                 </header>
 
-                <div class="toolbox__grid">
+                <!-- =========================================
+                    DOCUMENTOS
+                ========================================== -->
+
+                <header class="chapter__subheader">
+
+                    <span class="chapter-label fade-up">
+                        Documentos
+                    </span>
+
+                    <h3 class="fade-up fade-delay-1">
+                        Material de consulta
+                    </h3>
+
+                    <p class="fade-up fade-delay-2">
+                        Consulta la planificación del taller y los lineamientos
+                        necesarios para participar en el concurso.
+                    </p>
+
+                </header>
+
+                <div class="toolbox__grid toolbox__grid--documents">
 
                     <!-- SYLLABUS -->
 
                     <article class="tool-card fade-up">
 
-                        <i class="bi bi-journal-bookmark-fill"></i>
+                        <div class="tool-card__icon">
+                            <i class="bi bi-journal-bookmark-fill"></i>
+                        </div>
 
-                        <h3>
+                        <div class="tool-card__content">
 
-                            Syllabus del taller
+                            <h3>
+                                Syllabus del taller
+                            </h3>
 
-                        </h3>
+                            <p>
+                                Planificación completa de las sesiones, objetivos
+                                de aprendizaje, contenidos y actividades del taller.
+                            </p>
 
-                        <p>
+                            <div class="tool-card__actions">
 
-                            Planificación completa del taller,
-                            objetivos de aprendizaje y contenidos.
+                                <a
+                                    href="assets/documents/syllabus-aula-visual.pdf"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn">
 
-                        </p>
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                    Ver PDF
 
-                        <a
-                            href="assets/docs/syllabus.pdf"
-                            target="_blank"
-                            class="btn">
+                                </a>
 
-                            Descargar PDF
+                                <a
+                                    href="assets/documents/syllabus-aula-visual.pdf"
+                                    download
+                                    class="btn btn-secondary">
 
-                        </a>
+                                    <i class="bi bi-download"></i>
+                                    Descargar
+
+                                </a>
+
+                            </div>
+
+                        </div>
 
                     </article>
 
-                    <!-- BASES -->
+                    <!-- BASES DEL CONCURSO -->
 
                     <article class="tool-card fade-up fade-delay-1">
 
-                        <i class="bi bi-file-earmark-text-fill"></i>
+                        <div class="tool-card__icon">
+                            <i class="bi bi-file-earmark-text-fill"></i>
+                        </div>
 
-                        <h3>
+                        <div class="tool-card__content">
 
-                            Bases del concurso
+                            <h3>
+                                Bases del concurso
+                            </h3>
 
-                        </h3>
+                            <p>
+                                Requisitos, criterios de evaluación, condiciones
+                                de participación y lineamientos del concurso
+                                “Historias en un Minuto”.
+                            </p>
 
-                        <p>
+                            <div class="tool-card__actions">
 
-                            Requisitos, criterios de evaluación,
-                            cronograma y condiciones de participación.
+                                <a
+                                    href="assets/documents/bases-concurso.pdf"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn">
 
-                        </p>
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                    Ver PDF
 
-                        <a
-                            href="assets/docs/bases.pdf"
-                            target="_blank"
-                            class="btn">
+                                </a>
 
-                            Descargar PDF
+                                <a
+                                    href="assets/documents/bases-concurso.pdf"
+                                    download
+                                    class="btn btn-secondary">
 
-                        </a>
+                                    <i class="bi bi-download"></i>
+                                    Descargar
+
+                                </a>
+
+                            </div>
+
+                        </div>
 
                     </article>
 
-                    <!-- PPT -->
+                </div>
+
+                <!-- =========================================
+                    PRESENTACIONES DEL TALLER
+                ========================================== -->
+
+                <header class="chapter__subheader">
+
+                    <span class="chapter-label fade-up">
+                        Presentaciones
+                    </span>
+
+                    <h3 class="fade-up fade-delay-1">
+                        Desarrollo de las sesiones
+                    </h3>
+
+                    <p class="fade-up fade-delay-2">
+                        Las presentaciones siguen una secuencia progresiva:
+                        primero se introduce el lenguaje audiovisual, luego se
+                        construyen las historias y finalmente se organiza la
+                        producción del cortometraje.
+                    </p>
+
+                </header>
+
+                <div class="toolbox__grid toolbox__grid--presentations">
+
+                    <!-- SESIÓN 1 -->
+
+                    <article class="tool-card fade-up">
+
+                        <div class="tool-card__icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+
+                        <div class="tool-card__content">
+
+                            <span class="tool-card__label">
+                                Sesión 1
+                            </span>
+
+                            <h3>
+                                Lenguaje audiovisual: cámara, planos y composición
+                            </h3>
+
+                            <p>
+                                Introducción al uso creativo de la cámara, los
+                                tamaños de plano, los ángulos y las reglas básicas
+                                de composición visual.
+                            </p>
+
+                            <div class="tool-card__actions">
+
+                                <a
+                                    href="assets/documents/presentations/sesion-1-lenguaje-audiovisual.pdf"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn">
+
+                                    <i class="bi bi-eye-fill"></i>
+                                    Ver presentación
+
+                                </a>
+
+                                <a
+                                    href="assets/documents/presentations/sesion-1-lenguaje-audiovisual.pptx"
+                                    download
+                                    class="btn btn-secondary">
+
+                                    <i class="bi bi-download"></i>
+                                    Descargar PPTX
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- SESIÓN 2 -->
+
+                    <article class="tool-card fade-up fade-delay-1">
+
+                        <div class="tool-card__icon">
+                            <i class="bi bi-journal-richtext"></i>
+                        </div>
+
+                        <div class="tool-card__content">
+
+                            <span class="tool-card__label">
+                                Sesión 2
+                            </span>
+
+                            <h3>
+                                Narrativa audiovisual: de la idea al storyboard
+                            </h3>
+
+                            <p>
+                                Guía para construir escenas, personajes y conflictos,
+                                y transformar una idea en un guion y un storyboard.
+                            </p>
+
+                            <div class="tool-card__actions">
+
+                                <a
+                                    href="assets/documents/presentations/sesion-2-narrativa-storyboard.pdf"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn">
+
+                                    <i class="bi bi-eye-fill"></i>
+                                    Ver presentación
+
+                                </a>
+
+                                <a
+                                    href="assets/documents/presentations/sesion-2-narrativa-storyboard.pptx"
+                                    download
+                                    class="btn btn-secondary">
+
+                                    <i class="bi bi-download"></i>
+                                    Descargar PPTX
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- SESIÓN 3 -->
 
                     <article class="tool-card fade-up fade-delay-2">
 
-                        <i class="bi bi-easel2-fill"></i>
+                        <div class="tool-card__icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
 
-                        <h3>
+                        <div class="tool-card__content">
 
-                            Presentación didáctica
+                            <span class="tool-card__label">
+                                Sesión 3
+                            </span>
 
-                        </h3>
+                            <h3>
+                                Producción audiovisual: roles, creatividad y planificación
+                            </h3>
 
-                        <p>
+                            <p>
+                                Material práctico para organizar un equipo de rodaje,
+                                generar ideas y preparar los recursos necesarios
+                                para realizar un cortometraje.
+                            </p>
 
-                            Material utilizado durante los talleres
-                            para introducir los conceptos principales
-                            de alfabetización audiovisual.
+                            <div class="tool-card__actions">
 
-                        </p>
+                                <a
+                                    href="assets/documents/presentations/sesion-3-produccion-audiovisual.pdf"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn">
 
-                        <a
-                            href="assets/docs/presentacion.pdf"
-                            target="_blank"
-                            class="btn">
+                                    <i class="bi bi-eye-fill"></i>
+                                    Ver presentación
 
-                            Ver presentación
+                                </a>
 
-                        </a>
+                                <a
+                                    href="assets/documents/presentations/sesion-3-produccion-audiovisual.pptx"
+                                    download
+                                    class="btn btn-secondary">
+
+                                    <i class="bi bi-download"></i>
+                                    Descargar PPTX
+
+                                </a>
+
+                            </div>
+
+                        </div>
 
                     </article>
 
-                    <!-- GUÍA AUDIOVISUAL -->
+                </div>
 
-                    <article class="tool-card fade-up fade-delay-3">
+                <!-- =========================================
+                    GUÍA AUDIOVISUAL
+                ========================================== -->
+
+                <header class="chapter__subheader">
+
+                    <span class="chapter-label fade-up">
+                        Recurso audiovisual
+                    </span>
+
+                    <h3 class="fade-up fade-delay-1">
+                        Guía del taller
+                    </h3>
+
+                    <p class="fade-up fade-delay-2">
+                        Este video resume la metodología del taller y las
+                        principales etapas del proceso de creación audiovisual.
+                    </p>
+
+                </header>
+
+                <div class="toolbox__featured">
+
+                    <article class="tool-card tool-card--video fade-up">
 
                         <div class="tool-card__icon">
                             <i class="bi bi-camera-reels-fill"></i>
@@ -1054,9 +1261,9 @@
                             </h3>
 
                             <p>
-                                Video de apoyo que resume la metodología del taller
-                                y las principales etapas del proceso de creación
-                                audiovisual.
+                                Recurso de apoyo para comprender cómo se organiza
+                                el taller y cómo los estudiantes avanzan desde la
+                                planificación hasta la producción de sus historias.
                             </p>
 
                             <a
@@ -1084,7 +1291,6 @@
                                     class="btn">
 
                                     <i class="bi bi-play-circle"></i>
-
                                     Ver video
 
                                 </a>
@@ -1095,7 +1301,6 @@
                                     class="btn btn-secondary">
 
                                     <i class="bi bi-download"></i>
-
                                     Descargar
 
                                 </a>
