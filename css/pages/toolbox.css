@@ -1,7 +1,3 @@
-/* ==================================================
-   RECURSOS DIDÁCTICOS
-================================================== */
-
 .tool-card{
     display: flex;
     flex-direction: column;
@@ -34,12 +30,9 @@
 
 .tool-card__label {
     display: inline-block;
-
     padding: .35rem .75rem;
-
     background: rgba(47,128,237,.14);
     border-radius: var(--radius-full);
-
     font-size: var(--fs-sm);
     font-weight: 700;
     color: var(--color-primary);
@@ -53,79 +46,51 @@
 }
 
 .tool-card__actions .btn i{
-
     margin:0;
-
     display:inlie-flex;
-
     align-items:center;
-
     justify-content:center;
     color:#ffffff;
-
 }
 
 .tool-card h3{
-
     margin-bottom:1rem;
-
 }
 
 .tool-card p{
-
     margin-bottom:1.5rem;
-
     line-height:1.8;
-
 }
 
 .tool-card__video{
-
     width:100%;
-
     margin-top:1rem;
-
     border-radius:var(--radius-md);
-
 }
-
-/* ==================================================
-   VISTA PREVIA DE GUÍA AUDIOVISUAL
-================================================== */
 
 .tool-card__preview {
     position: relative;
-
     display: block;
     width: 100%;
-
     margin-top: var(--space-sm);
-
     overflow: hidden;
-
     background: #000;
     border-radius: var(--radius-md);
-
     aspect-ratio: 16 / 9;
 }
 
 .tool-card__preview img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     transition: transform var(--transition-normal);
 }
 
 .tool-card__preview::after {
     content: "";
-
     position: absolute;
     inset: 0;
-
     background: rgba(0, 0, 0, .32);
-
     transition: background var(--transition-normal);
 }
 
@@ -142,29 +107,21 @@
     top: 50%;
     left: 50%;
     z-index: 1;
-
     width: 64px;
     height: 64px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     transform: translate(-50%, -50%);
-
     background: var(--color-primary);
     border-radius: var(--radius-full);
-
     color: #fff;
-
     box-shadow: var(--shadow-md);
-
     transition: transform var(--transition-normal);
 }
 
 .tool-card__play i {
     margin: 0;
-
     font-size: 2rem;
     color: inherit;
 }
@@ -181,45 +138,26 @@
     margin-top: auto;
 }
 
-/* ==========================================
-   BOTONES DE RECURSOS
-========================================== */
-
 .tool-card__actions{
-
     display:flex;
-
     gap:.75rem;
-
     margin-top:1rem;
-
 }
 
 .tool-card__actions .btn{
-
     flex:1;
-
     padding:.65rem .85rem;
-
     font-size:.9rem;
-
     font-weight:600;
-
     min-height:44px;
     line-height: 1;
-
 }
 
 .tool-card__actions .btn{
-
     display: inline-flex;
-
     justify-content:center;
-
     align-items:center;
-
     gap:.4rem;
-
 }
 
 .tool-card__actions .btn i{

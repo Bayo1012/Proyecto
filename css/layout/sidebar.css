@@ -1,40 +1,21 @@
-/* ==================================================
-   SIDEBAR
-================================================== */
-
-/* ==========================
-   CONTENEDOR PRINCIPAL
-========================== */
-
 .sidebar{
     position: fixed;
     top: 0;
     left: 0;
-
     width: 70px;
     height: 100vh;
-
     background: var(--color-surface);
-
     display: flex;
     flex-direction: column;
-
     transition: .35s cubic-bezier(.4,0,.2,1);
-
     overflow: hidden;
-
     z-index: var(--z-sidebar);
-
     box-shadow: var(--shadow-md);
 }
 
 .sidebar:hover{
     width: 260px;
 }
-
-/* ==========================
-   HEADER
-========================== */
 
 .sidebar__header{
     display:flex;
@@ -44,15 +25,10 @@
     margin-bottom: 2rem;
 }
 
-/* ==========================
-   LOGO
-========================== */
-
 .sidebar__logo{
     display:flex;
     justify-content:center;
     align-items:center;
-
     width:100%;
     padding:.5rem;
 }
@@ -61,10 +37,8 @@
     width:100%;
     max-width:120px;
     height:auto;
-
     transition:
         transform .35s ease;
-
 }
 
 .sidebar:hover .sidebar__logo img{
@@ -72,49 +46,22 @@
     max-width: 120;
 }
 
-/* ==========================
-   NAV
-========================== */
-
 .sidebar__nav{
-
     flex:1;
-
     display:flex;
-
 }
-
-/* ==========================
-   MENU
-========================== */
 
 .sidebar__menu{
-
     width:100%;
-
     display:flex;
-
     flex-direction:column;
-
     gap:1.3rem;
-
     list-style:none;
-
 }
-
-/* ==========================
-   ITEMS
-========================== */
 
 .sidebar__item{
-
     width:100%;
-
 }
-
-/* ==========================
-   LINKS
-========================== */
 
 .sidebar__link{
     position:relative;
@@ -128,42 +75,25 @@
 }
 
 .sidebar__link:hover{
-
     background:rgba(255,255,255,.05);
-
 }
 
 .sidebar__link::before{
-
     content:"";
-
     position:absolute;
-
     left:0;
     top:50%;
-
     width:4px;
     height:0;
-
     background:#3b82f6;
-
     border-radius:0 4px 4px 0;
-
     transform:translateY(-50%);
-
     transition:.30s;
-
 }
 
 .sidebar__link:hover::before{
-
     height:65%;
-
 }
-
-/* ==========================
-   ICONS
-========================== */
 
 .sidebar__icon{
     font-size:1.35rem;
@@ -177,34 +107,19 @@
     transform:scale(1.12);
 }
 
-/* ==========================
-   TEXT
-========================== */
-
 .sidebar__text{
-
     white-space:nowrap;
-
     opacity:0;
-
     transform:translateX(-12px);
-
     transition:
-
         opacity .25s ease,
-
         transform .25s ease;
-
 }
 
 .sidebar:hover .sidebar__text{
     opacity:1;
     transform:translateX(0);
 }
-
-/* ==========================================
-   ACTIVE LINK
-========================================== */
 
 .sidebar__link.active{
     background:rgba(59,130,246,.12);

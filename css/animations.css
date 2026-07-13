@@ -1,23 +1,15 @@
-/* ==================================================
-   SCROLL ANIMATIONS
-================================================== */
-
 .fade-up{
-
     opacity:0;
     transform:translateY(45px);
-
     transition:
         opacity .7s ease,
         transform .7s ease;
-
     will-change:opacity, transform;
 }
 
 .fade-up.show{
     opacity:1;
     transform:translateY(0);
-
 }
 
 .fade-delay-1 {

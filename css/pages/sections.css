@@ -1,33 +1,18 @@
-/* ==================================================
-   INTRODUCCIÓN
-================================================== */
-
 #introduccion{
-
     background:var(--color-background);
-
 }
 
 #introduccion h2{
-
     margin-top:1rem;
-
     margin-bottom:1.5rem;
-
     max-width:700px;
-
 }
 
 .intro__grid{
-
     display:grid;
-
     grid-template-columns:repeat(2,1fr);
-
     gap:2rem;
-
     margin-top:3rem;
-
 }
 
 .intro__card{
@@ -49,44 +34,26 @@
     color:var(--color-secondary);
 }
 
-/* ==========================================
-   INTRO HEADER
-========================================== */
-
 #introduccion .chapter-label{
-
     display:inline-block;
-
     margin-bottom:1rem;
-
 }
 
 #introduccion h2{
-
     max-width:700px;
-
     margin:0 auto 1.5rem;
-
     text-align:center;
-
 }
 
 #introduccion .lead{
-
     max-width:850px;
-
     margin:0 auto;
-
     text-align:center;
-
 }
 
 #introduccion{
-
     padding-top:var(--space-4xl);
-
     padding-bottom:var(--space-4xl);
-
 }
 
 .section,
@@ -106,21 +73,15 @@
         );
 }
 
-/* ==================================================
-   CHAPTERS
-================================================== */
-
 .chapter__header{
     max-width: 950px;
     text-align:center;
     margin:0 auto var(--space-3xl);
     padding-inline: var(--space-md);
-
 }
 
 .chapter__header .chapter-label {
     margin-bottom: var(--space-md);
-
     font-size: clamp(.95rem, 1.2vw, 1.15rem);
     font-weight: 700;
     letter-spacing: .22em;
@@ -136,7 +97,6 @@
 .chapter__header .lead{
     max-width: 850px;
     margin-inline: auto;
-
     font-size: clamp(1.1rem, 1.7vw, 1.35rem);
     line-height: 1.8;
 }
@@ -180,16 +140,11 @@
 }
 
 .chapter__image figcaption{
-
     margin-top:var(--space-sm);
     font-size:var(--fs-sm);
     color:var(--color-text-muted);
     font-style:italic;
 }
-
-/* ==================================================
-   MISIÓN Y VISIÓN
-================================================== */
 
 .project {
     background: var(--color-background);
@@ -207,18 +162,10 @@
     margin-top: var(--space-2xl);
 }
 
-/* ==================================================
-   SEPARACIÓN SUPERIOR DE CAPÍTULOS I Y II
-================================================== */
-
 #capitulo1,
 #capitulo2 {
     padding-top: calc(var(--section-padding) + var(--space-lg));
 }
-
-/* ==================================================
-   INTRODUCCIÓN NARRATIVA
-================================================== */
 
 .introduction {
     background:
@@ -237,10 +184,8 @@
 
 .introduction__video video {
     display: block;
-
     width: 100%;
     aspect-ratio: 16 / 9;
-
     background: #000;
     border-radius: var(--video-radius);
     box-shadow: var(--shadow-lg);
@@ -253,24 +198,19 @@
 
 .introduction__content p {
     margin-bottom: var(--space-lg);
-
     font-size: clamp(1rem, 1.3vw, 1.15rem);
     line-height: 1.9;
 }
 
 .introduction__next {
     width: fit-content;
-
     display: flex;
     align-items: center;
     gap: var(--space-sm);
-
     margin: var(--space-2xl) auto 0;
-
     font-family: var(--font-heading);
     font-weight: 700;
     color: var(--color-secondary);
-
     transition: var(--transition-normal);
 }
 
@@ -282,15 +222,10 @@
     font-size: 1.3rem;
 }
 
-/* ==================================================
-   TRANSICIÓN ENTRE CAPÍTULOS
-================================================== */
-
 .chapter-transition {
     max-width: 1000px;
     margin: var(--space-4xl) auto 0;
     padding-top: var(--space-3xl);
-
     border-top: 1px solid rgba(255,255,255,.1);
 }
 
@@ -306,7 +241,6 @@
 
 .chapter-transition__header h3 {
     margin-bottom: var(--space-md);
-
     font-size: clamp(2rem, 4vw, 3.4rem);
     font-weight: 800;
     line-height: 1.15;
@@ -323,10 +257,6 @@
     margin: var(--space-xl) auto 0;
     text-align: center;
 }
-
-/* ==================================================
-   SUBENCABEZADOS DEL CAPÍTULO
-================================================== */
 
 .chapter__subheader {
     max-width: 850px;
@@ -351,10 +281,6 @@
     line-height: 1.8;
 }
 
-/* ==================================================
-   EXPERIENCIA DEL TALLER
-================================================== */
-
 .experience-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -363,12 +289,10 @@
 
 .experience-card {
     padding: var(--space-lg);
-
     background: var(--color-surface);
     border: 1px solid rgba(255,255,255,.08);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
-
     transition: var(--transition-normal);
 }
 
@@ -380,7 +304,6 @@
 .experience-card i {
     display: block;
     margin-bottom: var(--space-md);
-
     font-size: 2rem;
     color: var(--color-primary);
 }
@@ -393,10 +316,6 @@
     line-height: 1.7;
 }
 
-/* ==================================================
-   METODOLOGÍA
-================================================== */
-
 .methodology-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -405,9 +324,7 @@
 
 .methodology-step {
     padding: var(--space-lg);
-
     text-align: center;
-
     background: var(--color-card);
     border: 1px solid rgba(255,255,255,.08);
     border-radius: var(--radius-lg);
@@ -416,11 +333,9 @@
 .methodology-step span {
     display: block;
     margin-bottom: var(--space-sm);
-
     font-family: var(--font-heading);
     font-size: var(--fs-2xl);
     font-weight: 800;
-
     color: var(--color-secondary);
 }
 
@@ -428,22 +343,16 @@
     color: var(--color-text);
 }
 
-/* ==================================================
-   REFERENTE MINKA
-================================================== */
-
 .reference-block {
     max-width: 1050px;
     margin: var(--space-4xl) auto 0;
     padding-top: var(--space-3xl);
-
     border-top: 1px solid rgba(255,255,255,.1);
 }
 
 .reference-block__closing {
     max-width: 850px;
     margin: var(--space-xl) auto 0;
-
     text-align: center;
     font-size: clamp(1rem, 1.3vw, 1.15rem);
     line-height: 1.9;

@@ -2,68 +2,43 @@
 <html lang="es">
 
 <head>
-
-    <!-- =========================================
-         METADATOS
-    ========================================== -->
-
+    <!--METADATOS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula Visual</title>
     <meta name="description" content="Docuweb sobre Alfabetización Audiovisual.">
 
-    <!-- =========================================
-         FAVICON
-    ========================================== -->
-
+    <!--FAVICON-->
     <link rel="icon" type="image/png" href="assets/images/logos/logo con blanco.png">
 
-    <!-- =========================================
-         GOOGLE FONTS
-    ========================================== -->
-
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- =========================================
-        BOOTSTRAP ICONS
-    ========================================== -->
-
+    <!--BOOTSTRAP ICONS-->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- =========================================
-         CSS BASE
-    ========================================== -->
-
+    <!--CSS BASE-->
     <link rel="stylesheet" href="css/base/variables.css">
     <link rel="stylesheet" href="css/base/reset.css">
     <link rel="stylesheet" href="css/base/typography.css">
     <link rel="stylesheet" href="css/base/utilities.css">
 
-    <!-- =========================================
-         LAYOUT
-    ========================================== -->
-
+    <!--LAYOUT-->
     <link rel="stylesheet" href="css/layout/footer.css">    
     <link rel="stylesheet" href="css/layout/layout.css">
     <link rel="stylesheet" href="css/layout/sidebar.css">
 
-    <!-- =========================================
-         COMPONENTES
-    ========================================== -->
-
+    <!--COMPONENTES-->
     <link rel="stylesheet" href="css/components/buttons.css">
     <link rel="stylesheet" href="css/components/cards.css">
     <link rel="stylesheet" href="css/components/countdown.css">
     <link rel="stylesheet" href="css/components/gallery.css">
     <link rel="stylesheet" href="css/components/loader.css">
 
-    <!-- =========================================
-         PÁGINAS
-    ========================================== -->
-
+    <!--PÁGINAS-->
     <link rel="stylesheet" href="css/pages/chapter1.css">
     <link rel="stylesheet" href="css/pages/chapter2.css">
     <link rel="stylesheet" href="css/pages/gallery-page.css">
@@ -74,40 +49,27 @@
     <link rel="stylesheet" href="css/pages/team.css">
     <link rel="stylesheet" href="css/pages/toolbox.css">
 
-    <!-- =========================================
-         ANIMACIONES
-    ========================================== -->
-
+    <!--ANIMACIONES-->
     <link rel="stylesheet" href="css/animations.css">
 
-    <!-- =========================================
-         RESPONSIVE
-    ========================================== -->
-
+    <!--RESPONSIVE-->
     <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
 <body>
 
-    <!-- =========================================
-        LOADER
-    ========================================= -->
-
+    <!--LOADER-->
     <div id="loader">
         <img
             src="assets/images/logos/logo.png"
             alt="Aula Visual">
     </div>
 
-    <!-- =========================================
-         SIDEBAR
-    ========================================== -->
-
+    <!--SIDEBAR-->
     <aside class="sidebar">
 
         <!-- Logo -->
-
         <div class="sidebar__header">
             <a href="#inicio" class="sidebar__logo">
                 <img src="assets/images/logos/logo con blanco.png" alt="Logo Aula Visual">
@@ -115,7 +77,6 @@
         </div>
 
         <!-- Navegación -->
-
         <nav class="sidebar__nav">
             <ul class="sidebar__menu">
 
@@ -179,7 +140,7 @@
                         </span>
 
                         <span class="sidebar__text">
-                            Herramientas
+                            Recursos
                         </span>
                     </a>
                 </li>
@@ -216,16 +177,11 @@
 
     </aside>
 
-    <!-- =========================================
-         CONTENIDO PRINCIPAL
-    ========================================== -->
+    <!--CONTENIDO PRINCIPAL-->
 
     <main>
 
-        <!-- =========================================
-            INICIO / HERO
-        ========================================= -->
-
+        <!--INICIO / HERO-->
         <section id="inicio" class="hero">
 
             <!-- Video de fondo -->
@@ -240,9 +196,7 @@
                 <source
                     src="assets/videos/hero/fondo.mp4"
                     type="video/mp4">
-
                 Tu navegador no soporta videos HTML5.
-
             </video>
 
             <!-- Capa oscura -->
@@ -281,97 +235,74 @@
             </div>
 
             <!-- Indicador de desplazamiento -->
-
             <a
                 href="#introduccion"
                 class="hero__scroll"
                 aria-label="Ir a la introducción">
                 <span>Explorar</span>
                 <i class="bi bi-chevron-double-down"></i>
-
             </a>
 
         </section>
 
-        <!-- =========================================
-            INTRODUCCIÓN
-        ========================================= -->
-
+        <!--INTRODUCCIÓN-->
         <section id="introduccion" class="section introduction">
 
             <div class="container">
 
                 <header class="chapter__header">
-
                     <span class="chapter-label fade-up">
                         Introducción
                     </span>
-
                     <h2 class="fade-up fade-delay-1">
                         El inicio de una nueva mirada
                     </h2>
-
                     <p class="lead fade-up fade-delay-2">
                         Antes de comenzar el recorrido, conoce el propósito de
                         Aula Visual y la transformación que busca impulsar en
                         estudiantes de educación secundaria mediante la
                         alfabetización audiovisual.
                     </p>
-
                 </header>
 
                 <div class="introduction__video fade-up">
-
                     <video
                         controls
                         preload="metadata"
                         playsinline>
-
                         <source
                             src="assets/videos/introduccion.mp4"
                             type="video/mp4">
-
                         Tu navegador no soporta la reproducción de video.
-
                     </video>
-
                 </div>
 
                 <div class="introduction__content">
-
                     <p class="fade-up">
                         Aula Visual propone convertir el teléfono celular y los
                         recursos audiovisuales cotidianos en herramientas de
                         pensamiento, expresión y creación colectiva.
                     </p>
-
                     <p class="fade-up">
                         A través de talleres teórico-prácticos, los estudiantes
                         aprenderán a pasar del consumo pasivo de contenidos a la
                         construcción consciente de historias, trabajando en equipo
                         y asumiendo responsabilidades dentro de un proceso de rodaje.
                     </p>
-
                 </div>
 
                 <a
                     href="#capitulo1"
                     class="introduction__next fade-up"
                     aria-label="Continuar al Capítulo I">
-
                     <span>Continuar al Capítulo I</span>
-
                     <i class="bi bi-arrow-down"></i>
-
                 </a>
-
             </div>
 
         </section>
 
-        <!-- =========================================
-            CAPITULO I
-        ========================================== -->
+        <!--CAPITULO I-->
         <section id="capitulo1" class="chapter">
 
             <div class="container">
@@ -379,11 +310,9 @@
                     <span class="chapter-label fade-up">
                         Capitulo I
                     </span>
-
                     <h2 class="fade-up fade-delay-1">
                         El otro Analfabetismo
                     </h2>
-
                     <p class="lead fade-up fade-delay-2">
                         Comprender el lenguaje audiovisual es fundamental
                         para desarrollar una mirada crítica frente a las
@@ -393,55 +322,42 @@
                 </header>
 
                 <div class="chapter__video fade-up">
-
                     <video controls preload="metadata" playsinline>
-
                         <source
                             src="assets/videos/capitulo1.mp4"
                             type="video/mp4">
-
                         Tu navegador no soporta la reproduccion de video.
-
                     </video>
-
                 </div>
 
                 <div class="chapter__content">
-
                     <p class="fade-up">
                         Armando Robles Godoy planteó la existencia de una forma
                         de analfabetismo que no se relaciona con la incapacidad
                         de leer palabras, sino con la dificultad para interpretar
                         el lenguaje de las imágenes.
                     </p>
-
                     <p class="fade-up">
                         Aunque diariamente observamos películas, publicaciones,
                         anuncios y videos en redes sociales, no siempre conocemos
                         los recursos utilizados para construir esos mensajes ni
                         la intención que existe detrás de ellos.
                     </p>
-
                     <figure class="chapter__image fade-up">
-
                         <img
                             src="assets/images/chapters/robles-godoy.jpg"
                             alt="Armando Robles Godoy">
-
                         <figcaption>
                             Armando Robles Godoy, cineasta peruano y referente
                             de la alfabetización audiovisual.
                         </figcaption>
-
                     </figure>
-
                     <p class="fade-up">
                         La alfabetización audiovisual busca que las personas
                         dejen de ser únicamente espectadoras pasivas y aprendan
                         a reconocer cómo los planos, los sonidos, el montaje y
                         la composición producen significados y emociones.
                     </p>
-
                     <p class="fade-up">
                         Este conocimiento permite analizar críticamente los
                         contenidos que consumimos y utilizar las herramientas
@@ -449,89 +365,61 @@
                         realidades propias.
                     </p>
 
-                    <!-- =========================================
-                        TRANSICIÓN A LA PRÁCTICA
-                    ========================================= -->
-
+                    <!--TRANSICIÓN-->
                     <div class="chapter-transition">
-
                         <header class="chapter-transition__header">
-
                             <span class="chapter-label fade-up">
                                 De la teoría a la acción
                             </span>
-
                             <h3 class="fade-up fade-delay-1">
                                 Aprender a mirar para comenzar a crear
                             </h3>
-
                             <p class="fade-up fade-delay-2">
                                 Las ideas de Armando Robles Godoy no se limitan al análisis
                                 del cine. También plantean la necesidad de enseñar el lenguaje
                                 audiovisual desde las escuelas, formando espectadores críticos
                                 y futuros creadores capaces de comunicar sus propias historias.
                             </p>
-
                         </header>
 
                         <div class="chapter__video fade-up">
-
                             <video
                                 controls
                                 preload="metadata"
                                 playsinline>
-
                                 <source
                                     src="assets/videos/video3-corregido.mp4"
                                     type="video/mp4">
-
                                 Tu navegador no soporta la reproducción de video.
-
                             </video>
-
                         </div>
-
                         <p class="chapter-transition__closing fade-up">
                             Esta reflexión abre paso a la metodología práctica de Aula Visual,
                             donde los estudiantes dejarán de ser únicamente consumidores de
                             imágenes para participar activamente en la creación de celumetrajes.
                         </p>
-
                         <a
                             href="#capitulo2"
                             class="introduction__next fade-up"
                             aria-label="Continuar al Capítulo II">
-
                             <span>Continuar al Capítulo II</span>
-
                             <i class="bi bi-arrow-down"></i>
-
                         </a>
-
                     </div>
-
                 </div>
             </div>
-
         </section>
 
-        <!-- =========================================
-            CAPÍTULO II
-        ========================================= -->
-
+        <!--CAPÍTULO II-->
         <section id="capitulo2" class="chapter">
-
             <div class="container">
                 <header class="chapter__header">
-
                     <span class="chapter-label fade-up">
                         Capítulo II
                     </span>
-
                     <h2 class="fade-up fade-delay-1">
                         Aprender haciendo
                     </h2>
-
                     <p class="lead fade-up fade-delay-2">
                         La alfabetización audiovisual cobra sentido cuando el
                         aprendizaje se transforma en una experiencia práctica.
@@ -539,28 +427,20 @@
                         estudiantes descubren el lenguaje audiovisual mediante
                         la creación de sus propias historias.
                     </p>
-
                 </header>
 
                 <!-- Video -->
                 <div class="chapter__video fade-up">
-
                     <video controls preload="metadata" playsinline>
-
                         <source
                             src="assets/videos/capitulo2.mp4"
                             type="video/mp4">
-
                         Tu navegador no soporta la reproduccion de videos.
-
                     </video>
-
                 </div>
 
                 <!-- Texto -->
-
                 <div class="chapter__content">
-
                     <p class="fade-up">
                         Cada sesión está diseñada para fomentar la participación,
                         el trabajo en equipo y el desarrollo de habilidades
@@ -570,150 +450,113 @@
                     </p>
 
                 <!-- Experiencia del taller -->
-
                 <header class="chapter__subheader">
-
                     <span class="chapter-label fade-up">
                         Durante una sesión
                     </span>
-
                     <h3 class="fade-up fade-delay-1">
                         Una experiencia participativa
                     </h3>
-
                 </header>
 
                 <div class="experience-grid">
-
                     <article class="experience-card fade-up">
-
                         <i class="bi bi-eye"></i>
-
                         <h3>
                             Observación
                         </h3>
-
                         <p>
                             Los participantes aprenden a interpretar imágenes,
                             sonidos y narrativas audiovisuales desde una mirada
                             crítica.
                         </p>
-
                     </article>
 
                     <article class="experience-card fade-up fade-delay-1">
-
                         <i class="bi bi-people-fill"></i>
-
                         <h3>
                             Trabajo colaborativo
                         </h3>
-
                         <p>
                             Cada estudiante asume un rol dentro del equipo de
                             producción, fortaleciendo la comunicación y la
                             organización.
                         </p>
-
                     </article>
 
                     <article class="experience-card fade-up fade-delay-2">
-
                         <i class="bi bi-camera-video-fill"></i>
-
                         <h3>
                             Producción
                         </h3>
-
                         <p>
                             Utilizando recursos accesibles como teléfonos
                             celulares, los estudiantes planifican y producen
                             contenidos audiovisuales.
                         </p>
-
                     </article>
 
                     <article class="experience-card fade-up fade-delay-3">
-
                         <i class="bi bi-chat-square-text-fill"></i>
-
                         <h3>
                             Reflexión
                         </h3>
-
                         <p>
                             Cada actividad concluye con un espacio de diálogo
                             donde los participantes comparten aprendizajes y
                             experiencias.
                         </p>
-
                     </article>
 
                 </div>
 
                 <!-- Metodología -->
-
                 <header class="chapter__subheader">
-
                     <span class="chapter-label fade-up">
                         Metodología
                     </span>
-
                     <h3 class="fade-up fade-delay-1">
                         Etapas del taller
                     </h3>
-
                 </header>
 
                 <div class="methodology-grid">
-
                     <article class="methodology-step fade-up">
                         <span>01</span>
                         <p>Observación y análisis.</p>
                     </article>
-
                     <article class="methodology-step fade-up fade-delay-1">
                         <span>02</span>
                         <p>Planificación de la historia.</p>
                     </article>
-
                     <article class="methodology-step fade-up fade-delay-2">
                         <span>03</span>
                         <p>Producción audiovisual.</p>
                     </article>
-
                     <article class="methodology-step fade-up fade-delay-3">
                         <span>04</span>
                         <p>Edición y presentación.</p>
                     </article>
-
                 </div>
 
-                <!-- Referente MINKA -->
-
+                <!--MINKA-->
                 <div class="reference-block">
-
                     <header class="chapter__subheader">
-
                         <span class="chapter-label fade-up">
                             Inspiración metodológica
                         </span>
-
                         <h3 class="fade-up fade-delay-1">
                             Una experiencia que inspira Aula Visual
                         </h3>
-
                         <p class="fade-up fade-delay-2">
                             Antes de implementar Aula Visual, el equipo tomó como
                             referencia experiencias nacionales que han demostrado
                             el impacto de la alfabetización audiovisual en contextos
                             escolares.
                         </p>
-
                     </header>
 
                     <div class="chapter__content">
-
                         <p class="fade-up">
                             Uno de estos referentes es MINKA, una iniciativa vinculada
                             a la Universidad Nacional Mayor de San Marcos que evidencia
@@ -721,28 +564,21 @@
                             pueden fortalecer el aprendizaje, la creatividad y la
                             participación estudiantil.
                         </p>
-
                     </div>
 
                     <!-- Video de MINKA -->
-
                     <div class="chapter__video fade-up">
-
                         <video
                             controls
                             preload="metadata"
                             playsinline>
-
                             <source
                                 src="assets/videos/minka-detras-de-camaras.mp4"
                                 type="video/mp4">
 
                             Tu navegador no soporta la reproducción de video.
-
                         </video>
-
                     </div>
-
                     <p class="reference-block__closing fade-up">
                         Este registro del proceso creativo permite comprender que
                         la alfabetización audiovisual no se limita al resultado final.
@@ -750,229 +586,151 @@
                         creatividad y el aprendizaje colaborativo durante todas las
                         etapas de producción.
                     </p>
-
                 </div>
-
             </div>
-
         </section>
 
-        <!-- =========================================
-            CAPÍTULO III
-            REPOSITORIO
-        ========================================= -->
-
+        <!--CAPÍTULO III REPOSITORIO-->
         <section id="repositorio" class="section repository">
-
             <div class="container">
-
                 <header class="chapter__header">
-
                     <span class="chapter-label fade-up">
                         Capítulo III
                     </span>
-
                     <h2 class="fade-up fade-delay-1">
                         Historias en un Minuto
                     </h2>
-
                     <p class="lead fade-up fade-delay-2">
                         Este repositorio reunirá los celumetrajes creados por
                         los estudiantes durante el concurso de Aula Visual.
                         Las producciones serán publicadas cuando finalicen los
                         talleres y el proceso de evaluación.
                     </p>
-
                 </header>
 
                 <div class="repository__grid">
-
                     <article class="repository-card fade-up">
-
                         <div class="repository-card__preview">
-
                             <i class="bi bi-play-circle"></i>
-
                             <span>
                                 Próximamente
                             </span>
-
                         </div>
-
                         <div class="repository-card__content">
-
                             <h3>
                                 Historia en un Minuto 01
                             </h3>
-
                             <p>
                                 Próxima producción audiovisual realizada por
                                 estudiantes participantes.
                             </p>
-
                         </div>
-
                     </article>
-
                     <article class="repository-card fade-up fade-delay-1">
-
                         <div class="repository-card__preview">
-
                             <i class="bi bi-play-circle"></i>
-
                             <span>
                                 Próximamente
                             </span>
-
                         </div>
-
                         <div class="repository-card__content">
-
                             <h3>
                                 Historia en un Minuto 02
                             </h3>
-
                             <p>
                                 Próxima producción audiovisual realizada por
                                 estudiantes participantes.
                             </p>
-
                         </div>
-
                     </article>
-
                     <article class="repository-card fade-up fade-delay-2">
-
                         <div class="repository-card__preview">
-
                             <i class="bi bi-play-circle"></i>
-
                             <span>
                                 Próximamente
                             </span>
-
                         </div>
-
                         <div class="repository-card__content">
-
                             <h3>
                                 Historia en un Minuto 03
                             </h3>
-
                             <p>
                                 Próxima producción audiovisual realizada por
                                 estudiantes participantes.
                             </p>
-
                         </div>
-
                     </article>
-
                 </div>
 
                 <div class="repository__action fade-up">
-
                     <a
                         href="assets/documents/bases-concurso.pdf"
                         class="btn"
                         target="_blank"
                         rel="noopener">
-
                         <i class="bi bi-file-earmark-pdf"></i>
-
                         Ver bases del concurso
-
                     </a>
-
                 </div>
-
             </div>
-
         </section>
 
-        <!-- =========================================
-            CAPÍTULO IV
-            Recursos Didácticos
-        ========================================= -->
-
+        <!--CAPÍTULO IV Recursos Didácticos-->
         <section id="herramientas" class="section toolbox">
-
             <div class="container">
-
                 <header class="chapter__header">
-
                     <span class="chapter-label fade-up">
                         Recursos
                     </span>
-
                     <h2 class="fade-up fade-delay-1">
                         Recursos didácticos
                     </h2>
-
                     <p class="lead fade-up fade-delay-2">
                         Aula Visual pone a disposición de estudiantes y docentes
                         una colección de materiales que acompañan el desarrollo
                         del proyecto y fortalecen el aprendizaje del lenguaje
                         audiovisual.
                     </p>
-
                 </header>
 
-                <!-- =========================================
-                    DOCUMENTOS
-                ========================================== -->
-
+                <!--DOCUMENTOS-->
                 <header class="chapter__subheader">
-
                     <span class="chapter-label fade-up">
                         Documentos
                     </span>
-
                     <h3 class="fade-up fade-delay-1">
                         Material de consulta
                     </h3>
-
                     <p class="fade-up fade-delay-2">
                         Consulta la planificación del taller y los lineamientos
                         necesarios para participar en el concurso.
                     </p>
-
                 </header>
 
                 <div class="toolbox__grid toolbox__grid--documents">
 
                     <!-- SYLLABUS -->
-
                     <article class="tool-card fade-up">
-
                         <div class="tool-card__icon">
                             <i class="bi bi-journal-bookmark-fill"></i>
                         </div>
-
                         <div class="tool-card__content">
-
                             <h3>
                                 Syllabus del taller
                             </h3>
-
                             <p>
                                 Planificación completa de las sesiones, objetivos
                                 de aprendizaje, contenidos y actividades del taller.
                             </p>
-
                             <div class="tool-card__actions">
-
                                 <a
                                     href="assets/documents/syllabus-aula-visual.pdf"
                                     target="_blank"
                                     rel="noopener"
                                     class="btn">
-
                                     <i class="bi bi-file-earmark-pdf"></i>
                                     Ver PDF
-
                                 </a>
-
                                 <a
                                     href="assets/documents/syllabus-aula-visual.pdf"
                                     download
@@ -980,48 +738,34 @@
 
                                     <i class="bi bi-download"></i>
                                     Descargar
-
                                 </a>
-
                             </div>
-
                         </div>
-
                     </article>
 
                     <!-- BASES DEL CONCURSO -->
-
                     <article class="tool-card fade-up fade-delay-1">
-
                         <div class="tool-card__icon">
                             <i class="bi bi-file-earmark-text-fill"></i>
                         </div>
-
                         <div class="tool-card__content">
-
                             <h3>
                                 Bases del concurso
                             </h3>
-
                             <p>
                                 Requisitos, criterios de evaluación, condiciones
                                 de participación y lineamientos del concurso
                                 “Historias en un Minuto”.
                             </p>
-
                             <div class="tool-card__actions">
-
                                 <a
                                     href="assets/documents/bases-concurso.pdf"
                                     target="_blank"
                                     rel="noopener"
                                     class="btn">
-
                                     <i class="bi bi-file-earmark-pdf"></i>
                                     Ver PDF
-
                                 </a>
-
                                 <a
                                     href="assets/documents/bases-concurso.pdf"
                                     download
@@ -1031,66 +775,48 @@
                                     Descargar
 
                                 </a>
-
                             </div>
-
                         </div>
-
                     </article>
-
                 </div>
 
-                <!-- =========================================
-                    PRESENTACIONES DEL TALLER
-                ========================================== -->
+                <!--PRESENTACIONES DEL TALLER-->
 
                 <header class="chapter__subheader">
-
                     <span class="chapter-label fade-up">
                         Presentaciones
                     </span>
-
                     <h3 class="fade-up fade-delay-1">
                         Desarrollo de las sesiones
                     </h3>
-
                     <p class="fade-up fade-delay-2">
                         Las presentaciones siguen una secuencia progresiva:
                         primero se introduce el lenguaje audiovisual, luego se
                         construyen las historias y finalmente se organiza la
                         producción del cortometraje.
                     </p>
-
                 </header>
 
                 <div class="toolbox__grid toolbox__grid--presentations">
 
                     <!-- SESIÓN 1 -->
-
                     <article class="tool-card fade-up">
-
                         <div class="tool-card__icon">
                             <i class="bi bi-camera-fill"></i>
                         </div>
-
                         <div class="tool-card__content">
-
                             <span class="tool-card__label">
                                 Sesión 1
                             </span>
-
                             <h3>
                                 Lenguaje audiovisual: cámara, planos y composición
                             </h3>
-
                             <p>
                                 Introducción al uso creativo de la cámara, los
                                 tamaños de plano, los ángulos y las reglas básicas
                                 de composición visual.
                             </p>
-
                             <div class="tool-card__actions">
-
                                 <a
                                     href="assets/documents/presentations/sesion-1-lenguaje-audiovisual.pdf"
                                     target="_blank"
@@ -1101,7 +827,6 @@
                                     Ver presentación
 
                                 </a>
-
                                 <a
                                     href="assets/documents/presentations/sesion-1-lenguaje-audiovisual.pptx"
                                     download
@@ -1111,433 +836,291 @@
                                     Descargar PPTX
 
                                 </a>
-
                             </div>
-
                         </div>
-
                     </article>
 
                     <!-- SESIÓN 2 -->
-
                     <article class="tool-card fade-up fade-delay-1">
-
                         <div class="tool-card__icon">
                             <i class="bi bi-journal-richtext"></i>
                         </div>
-
                         <div class="tool-card__content">
-
                             <span class="tool-card__label">
                                 Sesión 2
                             </span>
-
                             <h3>
                                 Narrativa audiovisual: de la idea al storyboard
                             </h3>
-
                             <p>
                                 Guía para construir escenas, personajes y conflictos,
                                 y transformar una idea en un guion y un storyboard.
                             </p>
-
                             <div class="tool-card__actions">
-
                                 <a
                                     href="assets/documents/presentations/sesion-2-narrativa-storyboard.pdf"
                                     target="_blank"
                                     rel="noopener"
                                     class="btn">
-
                                     <i class="bi bi-eye-fill"></i>
                                     Ver presentación
-
                                 </a>
-
                                 <a
                                     href="assets/documents/presentations/sesion-2-narrativa-storyboard.pptx"
                                     download
                                     class="btn btn-secondary">
-
                                     <i class="bi bi-download"></i>
                                     Descargar PPTX
-
                                 </a>
-
                             </div>
-
                         </div>
-
                     </article>
 
                     <!-- SESIÓN 3 -->
-
                     <article class="tool-card fade-up fade-delay-2">
-
                         <div class="tool-card__icon">
                             <i class="bi bi-people-fill"></i>
                         </div>
-
                         <div class="tool-card__content">
-
                             <span class="tool-card__label">
                                 Sesión 3
                             </span>
-
                             <h3>
                                 Producción audiovisual: roles, creatividad y planificación
                             </h3>
-
                             <p>
                                 Material práctico para organizar un equipo de rodaje,
                                 generar ideas y preparar los recursos necesarios
                                 para realizar un cortometraje.
                             </p>
-
                             <div class="tool-card__actions">
-
                                 <a
                                     href="assets/documents/presentations/sesion-3-produccion-audiovisual.pdf"
                                     target="_blank"
                                     rel="noopener"
                                     class="btn">
-
                                     <i class="bi bi-eye-fill"></i>
                                     Ver presentación
-
                                 </a>
-
                                 <a
                                     href="assets/documents/presentations/sesion-3-produccion-audiovisual.pptx"
                                     download
                                     class="btn btn-secondary">
-
                                     <i class="bi bi-download"></i>
                                     Descargar PPTX
-
                                 </a>
-
                             </div>
-
                         </div>
-
                     </article>
-
                 </div>
 
-                <!-- =========================================
-                    GUÍA AUDIOVISUAL
-                ========================================== -->
-
+                <!--GUÍA AUDIOVISUAL-->
                 <header class="chapter__subheader">
-
                     <span class="chapter-label fade-up">
                         Recurso audiovisual
                     </span>
-
                     <h3 class="fade-up fade-delay-1">
                         Guía del taller
                     </h3>
-
                     <p class="fade-up fade-delay-2">
                         Este video resume la metodología del taller y las
                         principales etapas del proceso de creación audiovisual.
                     </p>
-
                 </header>
-
                 <div class="toolbox__featured">
-
                     <article class="tool-card tool-card--video fade-up">
-
                         <div class="tool-card__icon">
                             <i class="bi bi-camera-reels-fill"></i>
                         </div>
-
                         <div class="tool-card__content">
-
                             <h3>
                                 Guía audiovisual
                             </h3>
-
                             <p>
                                 Recurso de apoyo para comprender cómo se organiza
                                 el taller y cómo los estudiantes avanzan desde la
                                 planificación hasta la producción de sus historias.
                             </p>
-
                             <a
                                 href="assets/videos/guia-audiovisual.mp4"
                                 target="_blank"
                                 rel="noopener"
                                 class="tool-card__preview">
-
                                 <img
                                     src="assets/images/ui/guia-audiovisual-poster.png"
                                     alt="Vista previa de la guía audiovisual del taller">
-
                                 <span class="tool-card__play">
                                     <i class="bi bi-play-fill"></i>
                                 </span>
-
                             </a>
-
                             <div class="tool-card__actions">
-
                                 <a
                                     href="assets/videos/guia-audiovisual.mp4"
                                     target="_blank"
                                     rel="noopener"
                                     class="btn">
-
                                     <i class="bi bi-play-circle"></i>
                                     Ver video
-
                                 </a>
-
                                 <a
                                     href="assets/videos/guia-audiovisual.mp4"
                                     download
                                     class="btn btn-secondary">
-
                                     <i class="bi bi-download"></i>
                                     Descargar
-
                                 </a>
-
                             </div>
-
                         </div>
-
                     </article>
-
                 </div>
-
             </div>
-
         </section>
 
-        <!-- =========================================
-            INFOGRAFÍAS
-        ========================================= -->
-
+        <!--INFOGRAFÍAS-->
         <section id="infografias" class="section infographics">
-
             <div class="container">
-
                 <header class="chapter__header">
-
                     <span class="chapter-label fade-up">
                         Recursos visuales
                     </span>
-
                     <h2 class="fade-up fade-delay-1">
                         Infografías
                     </h2>
-
                     <p class="lead fade-up fade-delay-2">
                         Estos materiales resumen algunos conceptos fundamentales
                         de alfabetización audiovisual y pueden utilizarse como
                         recursos de consulta para estudiantes y docentes.
                     </p>
-
                 </header>
-
                 <div class="infographics__list">
 
                     <!-- Infografía 1 -->
-
                     <article class="infographic-resource fade-up">
-
                         <header class="infographic-resource__header">
-
                             <span class="infographic-resource__number">
                                 01
                             </span>
-
                             <div>
-
                                 <h3>
                                     ¿Qué escribió Robles Godoy sobre alfabetización cinematográfica?
                                 </h3>
-
                                 <p>
                                     Un resumen visual de las principales ideas de Armando
                                     Robles Godoy sobre la necesidad de aprender a leer
                                     críticamente las imágenes y el lenguaje del cine.
                                 </p>
-
                             </div>
-
                         </header>
-
                         <a
                             href="assets/images/infographics/robles-godoy-infografia.png"
                             target="_blank"
                             rel="noopener"
                             class="infographic-resource__image">
-
                             <img
                                 src="assets/images/infographics/robles-godoy-infografia.png"
                                 alt="Infografía sobre las ideas de Armando Robles Godoy acerca de la alfabetización cinematográfica">
-
                         </a>
-
                         <div class="infographic-resource__actions">
-
                             <a
                                 href="assets/images/infographics/robles-godoy-infografia.png"
                                 class="btn"
                                 target="_blank"
                                 rel="noopener">
-
                                 <i class="bi bi-arrows-fullscreen"></i>
-
                                 Ver completa
-
                             </a>
-
                             <a
                                 href="assets/images/infographics/robles-godoy-infografia.png"
                                 class="btn btn-secondary"
                                 download>
-
                                 <i class="bi bi-download"></i>
-
                                 Descargar PNG
-
                             </a>
-
                         </div>
-
                     </article>
 
                     <!-- Infografía 2 -->
-
                     <article class="infographic-resource fade-up">
-
                         <header class="infographic-resource__header">
-
                             <span class="infographic-resource__number">
                                 02
                             </span>
-
                             <div>
-
                                 <h3>
                                     Partes de un corto
                                 </h3>
-
                                 <p>
                                     Una guía visual que explica las etapas principales
                                     para construir una historia audiovisual: idea,
                                     guion, rodaje, montaje y difusión.
                                 </p>
-
                             </div>
-
                         </header>
-
                         <a
                             href="assets/images/infographics/partes-de-un-corto.png"
                             target="_blank"
                             rel="noopener"
                             class="infographic-resource__image">
-
                             <img
                                 src="assets/images/infographics/partes-de-un-corto.png"
                                 alt="Infografía sobre las partes y etapas de realización de un cortometraje">
-
                         </a>
 
                         <div class="infographic-resource__actions">
-
                             <a
                                 href="assets/images/infographics/partes-de-un-corto.png"
                                 class="btn"
                                 target="_blank"
                                 rel="noopener">
-
                                 <i class="bi bi-arrows-fullscreen"></i>
-
                                 Ver completa
-
                             </a>
-
                             <a
                                 href="assets/images/infographics/partes-de-un-corto.png"
                                 class="btn btn-secondary"
                                 download>
-
                                 <i class="bi bi-download"></i>
-
                                 Descargar PNG
-
                             </a>
-
                         </div>
-
                     </article>
-
                 </div>
-
                 <div class="infographics__notice fade-up">
-
                     <i class="bi bi-plus-circle"></i>
-
                     <div>
-
                         <h3>
                             Más recursos próximamente
                         </h3>
-
                         <p>
                             Esta colección continuará ampliándose con nuevos
                             materiales didácticos conforme avance el proyecto Aula Visual.
                         </p>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-        <!-- =========================================
-            MISIÓN Y VISIÓN
-        ========================================= -->
-
+        <!--MISIÓN Y VISIÓN-->
         <section id="proyecto" class="section project">
-
             <div class="container">
-
                 <header class="chapter__header">
-
                     <span class="chapter-label fade-up">
                         Aula Visual
                     </span>
-
                     <h2 class="fade-up fade-delay-1">
                         Proyecto Aula Visual
                     </h2>
-
                     <p class="lead fade-up fade-delay-2">
                         Una iniciativa que busca fortalecer la alfabetización audiovisual
                         en estudiantes de educación secundaria mediante talleres,
                         recursos didácticos y la producción colaborativa de contenidos.
                     </p>
-
                 </header>
-
                 <div class="intro__grid">
-
                     <article class="intro__card fade-up">
-
                         <h3>
                             Misión
                         </h3>
-
                         <p>
                             Alfabetizar audiovisualmente a estudiantes de
                             secundaria de colegios nacionales mediante talleres
@@ -1545,28 +1128,22 @@
                             espectadores pasivos en prosumidores críticos y
                             creadores conscientes.
                         </p>
-
                         <p>
                             A través del uso del teléfono celular como herramienta
                             pedagógica y de pensamiento, promovemos el trabajo en
                             equipo, la expresión audiovisual, el rigor narrativo
                             y la lectura crítica de los mensajes mediáticos.
                         </p>
-
                     </article>
-
                     <article class="intro__card fade-up fade-delay-1">
-
                         <h3>
                             Visión
                         </h3>
-
                         <p>
                             Ser un proyecto universitario referente en la
                             reducción del analfabetismo visual dentro del ámbito
                             escolar peruano.
                         </p>
-
                         <p>
                             Buscamos consolidar una plataforma digital que sirva
                             como vitrina del talento estudiantil y como caja de
@@ -1574,100 +1151,67 @@
                             fortaleciendo el vínculo entre la universidad pública
                             y la educación básica.
                         </p>
-
                     </article>
-
                 </div>
-
             </div>
-
         </section>
 
-        <!-- =========================================
-            CUENTA REGRESIVA
-        ========================================= -->
-
+        <!--CUENTA REGRESIVA-->
         <section id="cuenta-regresiva" class="section countdown-section">
-
             <div class="container">
-
                 <header class="chapter__header">
-
                     <span class="chapter-label fade-up">
                         Próximo evento
                     </span>
-
                     <h2 class="fade-up fade-delay-1">
                         Aula Visual está por comenzar
                     </h2>
-
                     <p class="lead fade-up fade-delay-2">
                         Falta cada vez menos para iniciar esta experiencia de
                         alfabetización audiovisual en las aulas escolares.
                     </p>
-
                 </header>
-
                 <div class="countdown fade-up">
-
                     <div class="countdown__item">
                         <span id="days">00</span>
                         <small>Días</small>
                     </div>
-
                     <div class="countdown__item">
                         <span id="hours">00</span>
                         <small>Horas</small>
                     </div>
-
                     <div class="countdown__item">
                         <span id="minutes">00</span>
                         <small>Minutos</small>
                     </div>
-
                     <div class="countdown__item">
                         <span id="seconds">00</span>
                         <small>Segundos</small>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-        <!-- =========================================
-            REDES SOCIALES Y FOOTER
-        ========================================= -->
-
+        <!--REDES SOCIALES Y FOOTER-->
         <footer id="footer" class="footer">
-
             <div class="container">
-
                 <div class="footer__content">
-
                     <img
                         src="assets/images/logos/logo con blanco.png"
                         alt="Logo Aula Visual"
                         class="footer__logo">
-
                     <h3>
                         Aula Visual
                     </h3>
-
                     <p>
                         Propuesta de alfabetización audiovisual contemporánea
                         y su impacto en la educación.
                     </p>
-
                     <div class="footer__social">
-
                         <h4>
                             Síguenos aquí
                         </h4>
-
                         <div class="footer__social-links">
-
                             <a
                                 href="https://www.instagram.com/aulavisual.pe/?utm_source=ig_web_button_share_sheet"
                                 target="_blank"
@@ -1675,7 +1219,6 @@
                                 aria-label="Instagram">
                                 <i class="bi bi-instagram"></i>
                             </a>
-
                             <a
                                 href="https://www.tiktok.com/@aulavisual.pe?is_from_webapp=1&sender_device=pc"
                                 target="_blank"
@@ -1683,9 +1226,7 @@
                                 aria-label="TikTok">
                                 <i class="bi bi-tiktok"></i>
                             </a>
-
                         </div>
-
                         <div class="footer__contact">
                             <i class="bi bi-envelope-fill"></i>
                             <a 
@@ -1696,53 +1237,34 @@
                                 aulavisual.pe@gmail.com
                             </a>
                         </div>
-
                     </div>
-
                     <nav class="footer__nav">
-
                         <a href="#inicio">Inicio</a>
-
                         <a href="#capitulo1">Capítulo I</a>
-
                         <a href="#capitulo2">Capítulo II</a>
-
                         <a href="#repositorio">Repositorio</a>
-
                         <a href="#herramientas">Herramientas</a>
-
                         <a href="#infografias">Infografías</a>
-
                         <a href="#proyecto">Proyecto</a>
-
                     </nav>
-
                 </div>
-
                 <div class="footer__bottom">
-
                     <p>
                         © 2026 Aula Visual. Todos los derechos reservados.
                     </p>
-
                 </div>
-
             </div>
-
         </footer>
     </main>
 
-    <!-- =========================================
-         JAVASCRIPT
-    ========================================== -->
-
+    <!--JAVASCRIPT-->
     <script src="js/config.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/main.js"></script>
-
 </body>
-
 </html>
+
+<!--Bayo-->

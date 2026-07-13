@@ -1,11 +1,3 @@
-/* ==================================================
-   CARDS
-================================================== */
-
-/* ==========================
-   HERO CARD
-========================== */
-
 .hero__card{
     width:100%;
     max-width:400px;
@@ -19,24 +11,14 @@
 }
 
 .hero__card:hover{
-
     transform:translateY(-6px);
-
 }
-
-/* ==========================
-   IMAGE
-========================== */
 
 .hero__card-image{
     width:100%;
     height:280px;
     object-fit:cover;
 }
-
-/* ==========================
-   CONTENT
-========================== */
 
 .hero__card-content{
     padding:1.5rem;
@@ -51,10 +33,6 @@
     color:var(--color-text-muted);
     line-height:1.7;
 }
-
-/* ==================================================
-   REPOSITORY CARDS
-================================================== */
 
 .repository {
     background: var(--color-surface);
@@ -88,14 +66,12 @@
     justify-content: center;
     align-items: center;
     gap: var(--space-sm);
-
     background:
         linear-gradient(
             135deg,
             rgba(47,128,237,.16),
             rgba(214,179,90,.08)
         );
-
     border-bottom: 1px solid rgba(255,255,255,.08);
     color: var(--color-text-muted);
 }
@@ -107,10 +83,8 @@
 
 .repository-card__preview span {
     padding: .45rem .9rem;
-
     border: 1px dashed rgba(255,255,255,.25);
     border-radius: var(--radius-full);
-
     font-size: var(--fs-sm);
     font-weight: 600;
     text-transform: uppercase;
@@ -131,10 +105,6 @@
     margin-top: var(--space-2xl);
 }
 
-/* ==================================================
-   TOOLBOX
-================================================== */
-
 .toolbox {
     background: var(--color-background);
 }
@@ -150,14 +120,11 @@
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-md);
-
     padding: var(--space-lg);
-
     background: var(--color-surface);
     border: 1px solid rgba(255,255,255,.08);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
-
     transition: var(--transition-normal);
 }
 
@@ -169,14 +136,11 @@
 .tool-card__icon {
     width: 60px;
     height: 60px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: rgba(47,128,237,.14);
     border-radius: var(--radius-md);
-
     font-size: 1.8rem;
     color: var(--color-primary);
 }
@@ -186,7 +150,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-sm);
-
     height: 100%;
 }
 
@@ -208,24 +171,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--card-gap);
-
     max-width: 900px;
     margin-inline: auto;
 }
 
 .invitation-card {
     min-height: 200px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: var(--space-sm);
-
     background: var(--color-card);
     border: 1px dashed rgba(255,255,255,.2);
     border-radius: var(--radius-lg);
-
     color: var(--color-text-muted);
 }
 
@@ -240,10 +199,6 @@
     letter-spacing: .1em;
 }
 
-/* ==================================================
-   INFOGRAPHICS
-================================================== */
-
 .infographics {
     background: var(--color-surface);
 }
@@ -252,19 +207,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--card-gap);
-
     max-width: 1000px;
     margin-inline: auto;
 }
 
 .infographic-card {
     overflow: hidden;
-
     background: var(--color-card);
     border: 1px solid rgba(255,255,255,.08);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
-
     transition: var(--transition-normal);
 }
 
@@ -275,20 +227,17 @@
 
 .infographic-card__preview {
     min-height: 320px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: var(--space-md);
-
     background:
         linear-gradient(
             135deg,
             rgba(214,179,90,.12),
             rgba(47,128,237,.12)
         );
-
     border-bottom: 1px solid rgba(255,255,255,.08);
 }
 
@@ -299,15 +248,12 @@
 
 .infographic-card__preview span {
     padding: .45rem .9rem;
-
     border: 1px dashed rgba(255,255,255,.25);
     border-radius: var(--radius-full);
-
     font-size: var(--fs-sm);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: .12em;
-
     color: var(--color-text-muted);
 }
 

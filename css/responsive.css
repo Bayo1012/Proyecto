@@ -1,4 +1,3 @@
-/*TABLET*/
 @media (max-width: 992px){
     .sidebar{
         width:70px;
@@ -10,7 +9,7 @@
         margin-left:70px;
     }
 }
-    /*TABLET HERO*/
+
     @media (max-width:992px){
         .hero__container{
             grid-template-columns:1fr;
@@ -25,7 +24,6 @@
         }
     }
 
-/*MOBILE */
 @media (max-width:768px){
     .hero{
         min-height:auto;
